@@ -26,18 +26,18 @@ State of the Current Site
 +	Performance
   (www.webpagetest.org):
  
-*Summary*: a lot of bandwidth dedicated to images and scripts
+**Summary**: a lot of bandwidth dedicated to images and scripts
 
  
 
-*Summary*: … and a lot of time spent loading, accessing, and rendering … 
+**Summary**: … and a lot of time spent loading, accessing, and rendering … 
 
 
 
 **Google PageSpeed Tools**
 +	*Optimization*: 65/100 (medium)
 +	*Page stats*: PSI estimates this page requires 3 additional round trips to load render blocking resources and 1.1 MB to fully render.     The median page requires 4 render blocking round trips and 1.5 MB. Fewer round trips and bytes results in faster pages.
-+	*Optimizations present*:
++	*Optimizations present*
   -	No landing page redirects
   -	Compression enabled
   -	HTML minified
@@ -66,7 +66,7 @@ State of the Current Site
   -	Education page is also reasonably well-organized by topic
     Free online classes page is poorly laid out
     Out dated/poorly maintained
-      Energy job info is old
+    Energy job info is old
   -	Demonstrations
     There is an error in the layout for this selection; unlike other choices, the box extends past the right border
 
