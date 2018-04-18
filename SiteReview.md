@@ -13,10 +13,10 @@
 +	deliverables each with description & acceptance terms
 
 State of the Current Site
-  +	accessibility audit (https://wave.webaim.org/) results:
-    - most images were missing alt text
-    - link text color is low contrast (difficult for color-/visually-impaired to view)
-  +	mobile friendliness
+  *	accessibility audit (https://wave.webaim.org/) results:
+     - most images were missing alt text
+      - link text color is low contrast (difficult for color-/visually-impaired to view)
+  *	mobile friendliness
   Google’s mobile-friendliness site:  *not mobile-friendly*
     -	Clickable elements too close together
     -	Viewport not set
@@ -75,8 +75,8 @@ State of the Current Site
     -	Environmental advocacy groups
 
 *	*Device support necessary*
-
-  This site is not designed for mobile browsing. Something that would be intended for older computers/browsers (like those in libraries   and public schools).
+    This site is not designed for mobile browsing. Something that would be intended for older computers/browsers (like those in
+    libraries and public schools).
 
   *	*Recommendations*
     -	Review end-user consumption of material and more efficiently organize information – consider compartmentalizing the site for 
