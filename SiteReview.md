@@ -33,7 +33,7 @@ State of the Current Site
 **Google PageSpeed Tools**
 *	*Optimization*: 65/100 (medium)
 *	*Page stats*: PSI estimates this page requires 3 additional round trips to load render blocking resources and 1.1 MB to fully render.     The median page requires 4 render blocking round trips and 1.5 MB. Fewer round trips and bytes results in faster pages.
-*	*Optimizations present*
+*	Optimizations present
   +	No landing page redirects
   +	Compression enabled
   +	HTML minified
