@@ -37,13 +37,13 @@ State of the Current Site
   +	Compression enabled
   +	HTML minified
   +	Above the fold content prioritized
-*	-Optimization recommendations
-  -	Optimize images
-  -	Browser caching
-  -	Eliminate render blocking Javascript and CSS in above the fold content
-  -	Reduce server response time
-  -	Minify CSS
-  -	Minify Javascript
+  *	Optimization recommendations
+    -	Optimize images
+    -	Browser caching
+    -	Eliminate render blocking Javascript and CSS in above the fold content
+    -	Reduce server response time
+    -	Minify CSS
+    -	Minify Javascript
 *	*Functionality*
   -	The download brochure (pdf) link is broken (*404 page not found*)
   -	Top navigation links all work
