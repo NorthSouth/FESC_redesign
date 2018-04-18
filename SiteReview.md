@@ -14,10 +14,10 @@
 
 State of the Current Site
 +	accessibility audit(https://wave.webaim.org/) results:
-  - most images were missing alt text
-  - link text color is low contrast (difficult for color-/visually-impaired to view)
+ - most images were missing alt text
+ - link text color is low contrast (difficult for color-/visually-impaired to view)
 +	mobile friendliness
-  Google’s mobile-friendliness site:  not mobile-friendly
+  Google’s mobile-friendliness site:  *not mobile-friendly*
   -	Clickable elements too close together
   -	Viewport not set
   -	Text too small to read
