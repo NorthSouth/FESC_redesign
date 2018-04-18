@@ -1,7 +1,7 @@
 # Site Analysis
 
-•	objectives/purpose of the redesign
-•	state of the current site
++•	objectives/purpose of the redesign
++•	state of the current site
   o	accessibility audit
   o	mobile friendliness
   o	performance (how quickly does it load?)
