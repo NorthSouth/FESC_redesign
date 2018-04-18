@@ -46,14 +46,14 @@ State of the Current Site
   +	Minify CSS
   +	Minify Javascript
 *	*Functionality*
-  -	The download brochure (pdf) link is broken (404 page not fount)
+  -	The download brochure (pdf) link is broken (*404 page not found*)
   -	Top navigation links all work
   -	Side navigation links all work
   -	Social network image links work
   -	University image links at bottom of page all work
   -	Main video works
   -	Helpful link ‘heating fuel comparison calculator’ Is broken (doesn’t point to a calculator)
-  -	Energy industry page: images are click-able but serve no purpose (not linked to anything…don’t enlarge)
+  -	Energy industry page: images are click-able but serve no purpose (not linked to anything … don’t enlarge)
   -	The ‘visit us’ map/directions page works
   -	A lot of information on this site is out dated …is this site even being maintained? There doesn’t seem to be anything past 2015 in a     lot of cases (deadlines for applications that passed 3 years ago… no more current links to research/publications after 2015)
   -	Research page is reasonably well-organized by program and provides information about participants and published research
