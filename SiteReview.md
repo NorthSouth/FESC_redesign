@@ -31,14 +31,14 @@ State of the Current Site
 **Summary**: … and a lot of time spent loading, accessing, and rendering … 
 
 **Google PageSpeed Tools**
-+	*Optimization*: 65/100 (medium)
-+	*Page stats*: PSI estimates this page requires 3 additional round trips to load render blocking resources and 1.1 MB to fully render.     The median page requires 4 render blocking round trips and 1.5 MB. Fewer round trips and bytes results in faster pages.
-+	*Optimizations present*
+*	*Optimization*: 65/100 (medium)
+*	*Page stats*: PSI estimates this page requires 3 additional round trips to load render blocking resources and 1.1 MB to fully render.     The median page requires 4 render blocking round trips and 1.5 MB. Fewer round trips and bytes results in faster pages.
+*	*Optimizations present*
   -	No landing page redirects
   -	Compression enabled
   -	HTML minified
   -	Above the fold content prioritized
-+	*Optimization recommendations*
+*	*Optimization recommendations*
   -	Optimize images
   -	Browser caching
   -	Eliminate render blocking Javascript and CSS in above the fold content
@@ -46,7 +46,7 @@ State of the Current Site
   -	Minify CSS
   -	Minify Javascript
 
-+	*Functionality*
+*	*Functionality*
   -	The download brochure (pdf) link is broken (404 page not fount)
   -	Top navigation links all work
   -	Side navigation links all work
@@ -66,19 +66,19 @@ State of the Current Site
   -	Demonstrations
     There is an error in the layout for this selection; unlike other choices, the box extends past the right border
 
-+	*Ease of use*
+*	*Ease of use*
   The site is clunky, unresponsive, slow, and difficult to navigate; a site you’d more than likely see back in 2000 than 2018. If it is   still an active site, it is poorly maintained; a lot of information is out of date and needs to be removed and/or corrected
 
-+	*User Research*
+*	*User Research*
   -	Not for casual browsers (targeted information for people who have a good sense of what they’re looking for)
   -	Educational Institutions (universities, similar programs, K through 12, libraries)
   -	Community advisory boards (town and city government agencies)
   -	Environmental advocacy groups
 
-+	*Device support necessary*
+*	*Device support necessary*
   This site is not designed for mobile browsing. Something that would be intended for older computers/browsers (like those in libraries   and public schools).
 
-+	*Recommendations*
+*	*Recommendations*
   -	Review end-user consumption of material and more efficiently organize information – consider compartmentalizing the site for 
     targeted users: universities, media, local governments etc. 
     Greatly reduce number of navigational links and overall clutter
