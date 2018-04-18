@@ -26,13 +26,9 @@ State of the Current Site
 +	Performance
   (www.webpagetest.org):
  
-**Summary**: a lot of bandwidth dedicated to images and scripts
-
- 
+**Summary**: a lot of bandwidth dedicated to images and scripts 
 
 **Summary**: … and a lot of time spent loading, accessing, and rendering … 
-
-
 
 **Google PageSpeed Tools**
 +	*Optimization*: 65/100 (medium)
@@ -41,11 +37,11 @@ State of the Current Site
   -	No landing page redirects
   -	Compression enabled
   -	HTML minified
-  -	Above-the-fold content prioritized
+  -	Above the fold content prioritized
 +	*Optimization recommendations*
   -	Optimize images
   -	Browser caching
-  -	Eliminate render-blocking Javascript and CSS in above-the fold content
+  -	Eliminate render blocking Javascript and CSS in above the fold content
   -	Reduce server response time
   -	Minify CSS
   -	Minify Javascript
@@ -75,7 +71,7 @@ State of the Current Site
 
 +	*User Research*
   -	Not for casual browsers (targeted information for people who have a good sense of what they’re looking for)
-  -	Educational Institutions (universities, similar programs, K-12, libraries)
+  -	Educational Institutions (universities, similar programs, K through 12, libraries)
   -	Community advisory boards (town and city government agencies)
   -	Environmental advocacy groups
 
