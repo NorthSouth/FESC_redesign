@@ -75,6 +75,7 @@ State of the Current Site
     -	Environmental advocacy groups
 
 *	*Device support necessary*
+
     This site is not designed for mobile browsing. Something that would be intended for older computers/browsers (like those in
     libraries and public schools).
 
