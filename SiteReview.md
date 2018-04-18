@@ -1,20 +1,20 @@
-#Site Analysis
+# Site Analysis
 
 •	objectives/purpose of the redesign
 •	state of the current site
-o	accessibility audit
-o	mobile friendliness
-o	performance (how quickly does it load?)
-o	functionality (does it work?)
-o	ease of use (is it pleasant to use?
+  o	accessibility audit
+  o	mobile friendliness
+  o	performance (how quickly does it load?)
+  o	functionality (does it work?)
+  o	ease of use (is it pleasant to use?
 •	user research (who are expected users? What do they want to accomplish?)
 •	device support necessary
 •	recommendations
-o	deliverables- each with description & acceptance terms
+  o	deliverables- each with description & acceptance terms
 
 State of the Current Site
 •	accessibility audit
-https://wave.webaim.org/  results:
+  (https://wave.webaim.org/)  results:
 o	most images were missing alt text
 o	link text color is low contrast (difficult for color-/visually-impaired to view)
 •	mobile friendliness
