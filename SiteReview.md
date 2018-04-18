@@ -13,8 +13,7 @@
 +	deliverables each with description & acceptance terms
 
 State of the Current Site
-+	accessibility audit
-  (https://wave.webaim.org/)  results:
++	accessibility audit(https://wave.webaim.org/) results:
   - most images were missing alt text
   - link text color is low contrast (difficult for color-/visually-impaired to view)
 +	mobile friendliness
