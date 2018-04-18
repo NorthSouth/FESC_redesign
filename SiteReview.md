@@ -10,7 +10,7 @@
 +	user research (who are expected users? What do they want to accomplish?)
 +	device support necessary
 +	recommendations
-  -	deliverables- each with description & acceptance terms
++	deliverables each with description & acceptance terms
 
 State of the Current Site
 +	accessibility audit
