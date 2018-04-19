@@ -25,6 +25,9 @@
   <meta name="twitter:image" content="images/header_logo.png">
   <meta name="twitter:card" content="summary_large_image">
 
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
   <style>
     .content-container {
       width: 90%;
@@ -42,19 +45,19 @@
     }
 
     img {
-      width: 80%;
+      height: 10%;
       margin: auto;
     }
 
     footer {
-      display:flex;
+      display: flex;
       flex-direction: row;
-      justify-content:space-around;
+      justify-content: space-around;
       width: 60%;
       margin-left: 2rem;
       margin-right: 2rem;
       border-top: 1px solid black;
-      padding-top:1rem;
+      padding-top: 1rem;
     }
   </style>
 
@@ -79,6 +82,12 @@
 </head>
 
 <body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
   <!--facebook share button-->
   <div id="fb-root"></div>
   <script>
@@ -93,13 +102,44 @@
   </script>
 
   <div class="content-container">
-    <h1>Echidnas!</h1>
+    <div><img src="images/header_logo.png" alt="FESC"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">FESC</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Education <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Outreach</a>
+          </li>
+         <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>-->
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <h1>FESC Bringing Energy Solutions to Florida, the Nation and the World</h1>
     <div class="flex-container">
       <div>
-        <p>Spine(s)-tingling fun facts!</p>
-        <p>Echidnas (/ɪˈkɪdnə/), sometimes known as spiny anteaters, belong to the family <i>Tachyglossidae</i> in the monotreme order of egg-laying mammals. The four extant species, together with the platypus, are the only surviving members of the order Monotremata and are the only living mammals that lay eggs. The diet of some species consists of ants and termites, but they are not closely related to the true anteaters of the Americas. Echidnas live in Australia and New Guinea.</p>
+        <p>The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy experts at its 12 supported universities to share energy-related expertise. The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan. The Consortium was charged to ‘perform research and development on innovative energy systems that lead to alternative energy strategies, improved energy efficiencies, and expanded economic development for the state‘. The legislature appropriated funding for research at five of the universities as well as support for education, outreach, and technology commercialization. The Consortium reports to and provides guidance on an as needed basis to the Florida Legislature, Executive Office of the Governor, and the Florida’s Office of Energy housed in the Florida Department of Agriculture and Consumer Services. Overarching to the Consortium’s research strategy is an energy systems approach to identify innovation opportunities, prepare an energy workforce, and guide economic development. Through collaborative research and development across the State University System and the industry, the goal of the consortium is to become a world leader in energy research, education, technology, and energy systems analysis. In so doing, the consortium shall:
+          <ul>
+            <li> Coordinate and initiate increased collaborative interdisciplinary energy research among the universities and the energy industry. </li>
+            <li> Assist in the creation and development of a Florida-based energy technology industry through efforts that would expedite commercialization of innovative energy technologies by taking advantage of the energy expertise within the State University System, high-technology incubators, industrial parks, and industry-driven research centers. </li>
+            <li> Provide a state resource for objective energy systems analysis. </li>
+            <li> Develop education and outreach programs to prepare a qualified energy workforce and informed public.</li>
+          </ul>
+
       </div>
-      <div><img src="images/header_logo.png" alt="FESC"></div>
+
     </div>
   </div>
 
