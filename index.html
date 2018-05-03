@@ -2,161 +2,204 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117525947-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-117525947-2');
-</script>
+  <meta charset="UTF-8">
   <title>FESC</title>
-  <!--  <script src="script.js"></script>-->
-  <!--<link rel="stylesheet" type="text/css" href="./styles/styles.css">-->
-  <!--<link rel="stylesheet" type="text/css" href="./styles/style-reference.css">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-  <!-- facebook tags -->
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
-  <meta property="og:title" content="Florida Energy Consortium">
-  <meta property="og:image" content="images/header_logo.png">
-  <meta property="og:url" content="https://northsouth.github.io/HTML300-FESC_redesign/">
-  <meta property="og:description" content="Universities Addressing Florida Energy Needs">
-  <meta property="og:image:height" content="521">
-  <meta property="og:image:width" content="184">
-  <meta property="og:type" content="website">
 
-  <!-- twitter tags -->
-  <meta name="twitter:title" content="Florida Energy Consortium">
-  <meta name="twitter:description" content="Universities Addressing Florida Energy Needs">
-  <meta name="twitter:image" content="images/header_logo.png">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
-  <style>
-    .content-container {
-      width: 90%;
-      margin: auto;
-    }
-
-    .flex-container {
-      width: 60%;
-      display: flex;
-      flex-direction: column;
-      margin-left: 2rem;
-      margin-right: 2rem;
-      padding-bottom: 1rem;
-      text-align: left;
-    }
-
-    img {
-      height: 10%;
-      margin: auto;
-    }
-
-    footer {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      width: 60%;
-      margin-left: 2rem;
-      margin-right: 2rem;
-      border-top: 1px solid black;
-      padding-top: 1rem;
-    }
-  </style>
-
-  <script>
-    window.twttr = (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0],
-        t = window.twttr || {};
-      if (d.getElementById(id)) return t;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://platform.twitter.com/widgets.js";
-      fjs.parentNode.insertBefore(js, fjs);
-
-      t._e = [];
-      t.ready = function(f) {
-        t._e.push(f);
-      };
-
-      return t;
-    }(document, "script", "twitter-wjs"));
-  </script>
 </head>
 
 <body>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-  <!--facebook share button-->
-  <div id="fb-root"></div>
-  <script>
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-
-  <div class="content-container">
-    <div><a href="index.html"><img src="images/logos/header_logo.png" alt="FESC"></a></div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand active" href="#">FESC</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="education.html">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="outreach.html">Outreach</a>
-          </li>
-         <!-- <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>-->
-        </ul>
-        <!--<form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>-->
+  <!--<nav class="navbar navbar-expand-lg navbar-light bg-light rounded">  -->
+  <div class="main-content-wrapper">
+    <div class="search-bar">&nbsp;</div>
+    <nav class="navbar navbar-expand-lg navbar-light  rounded">
+      <!--<div class="container ">-->
+      <a class="navbar-brand" href="#">
+          <img src="/images/header_logo.png" class="d-inline-block align-top nav-image-left" alt="">
+        </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+		  </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <div class="container">
+          <div class="navbar-nav row ">
+            <div class="col-sm nav-item dropdown megamenu-li">
+              <!-- <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mega Menu 1</a>-->
+              <div class="link-container" >
+                <a class="nav-link menu-test" href="" id="dropdown01" aria-haspopup="true" aria-expanded="false">Education</a>
+                <div class="sliding-background">&nbsp;</div>
+              </div>
+              <!--<a class="nav-link " href="" id="dropdown01" aria-haspopup="true" aria-expanded="false" >Mega Menu 1</a>-->
+              <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
+                <div class="row">
+                  <div class="col-sm-6 col-lg-3">
+                    <h5>Links</h5>
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <h5>More Links</h5>
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 1</a>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <h5>Paragraph</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus in veritatis, facilis eligendi sunt, culpa autem harum porro earum.</p>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <h5>Image</h5>
+                    <!--<img src="https://source.unsplash.com/250x150/?sig=4" alt="..." style="width: 100%;">-->
+                    <div alt="img-wrapper">
+                      <img src="images/section/academics.jpg" height=100px; alt="...">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm nav-item dropdown megamenu-li">
+              <!-- <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mega Menu 1</a>-->
+              <div class="link-container">
+                <a class="nav-link menu-test" href="" id="dropdown01" aria-haspopup="true" aria-expanded="false">Outreach</a>
+                <div class="sliding-background">&nbsp;</div>
+              </div>
+              <!--<a class="nav-link " href="" id="dropdown01" aria-haspopup="true" aria-expanded="false" >Mega Menu 1</a>-->
+              <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
+                <div class="row">
+                  <div class="col-sm-6 col-lg-3">
+                    <h5>Links</h5>
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <h5>More Links</h5>
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 1</a>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <h5>Paragraph</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus in veritatis, facilis eligendi sunt, culpa autem harum porro earum.</p>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <h5>Image</h5>
+                    <!--<img src="https://source.unsplash.com/250x150/?sig=4" alt="..." style="width: 100%;">-->
+                    <div alt="img-wrapper">
+                      <img src="images/section/go_greater.jpg" height=50px alt="...">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm nav-item dropdown megamenu-li">
+              <!-- <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mega Menu 1</a>-->
+              <div class="link-container">
+                <a class="nav-link menu-test" href="" id="dropdown01" aria-haspopup="true" aria-expanded="false">About</a>
+                <div class="sliding-background">&nbsp;</div>
+              </div>
+              <!--<a class="nav-link " href="" id="dropdown01" aria-haspopup="true" aria-expanded="false" >Mega Menu 1</a>-->
+              <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
+                <div class="row">
+                  <div class="col-sm-6 col-lg-3">
+                    <h5>Links</h5>
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <h5>More Links</h5>
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 1</a>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <h5>Paragraph</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus in veritatis, facilis eligendi sunt, culpa autem harum porro earum.</p>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <h5>Image</h5>
+                    <!--<img src="https://source.unsplash.com/250x150/?sig=4" alt="..." style="width: 100%;">-->
+                    <div alt="img-wrapper">
+                      <img src="images/section/about.jpg" height=100px alt="...">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm nav-item dropdown megamenu-li">
+              <!-- <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mega Menu 1</a>-->
+              <div class="link-container">
+                <a class="nav-link menu-test" href="" id="dropdown01" aria-haspopup="true" aria-expanded="false">Contact</a>
+                <div class="sliding-background">&nbsp;</div>
+              </div>
+              <!--<a class="nav-link " href="" id="dropdown01" aria-haspopup="true" aria-expanded="false" >Mega Menu 1</a>-->
+              <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
+                <div class="row">
+                  <div class="col-sm-6 col-lg-3">
+                    <h5>Links</h5>
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <h5>More Links</h5>
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 1</a>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <h5>Paragraph</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus in veritatis, facilis eligendi sunt, culpa autem harum porro earum.</p>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <h5>Image</h5>
+                    <!--<img src="https://source.unsplash.com/250x150/?sig=4" alt="..." style="width: 100%;">-->
+                    <div alt="img-wrapper">
+                      <img src="images/section/campuslife.jpg" height=100px alt="...">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="uf-image-container">
+        <a class="navbar-brand" href="http://www.ufl.edu/" target="_blank">
+          <img src="/images/logo-uf.png" class="d-inline-block align-top nav-image-right" alt="u florida">
+        </a>
+      </div>
+      <!--  </div>-->
     </nav>
-    <h1>FESC Bringing Energy Solutions to Florida, the Nation and the World</h1>
-    <div class="flex-container">
-      <div>
-        <p>The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy experts at its 12 supported universities to share energy-related expertise. The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan. The Consortium was charged to ‘perform research and development on innovative energy systems that lead to alternative energy strategies, improved energy efficiencies, and expanded economic development for the state‘. The legislature appropriated funding for research at five of the universities as well as support for education, outreach, and technology commercialization. The Consortium reports to and provides guidance on an as needed basis to the Florida Legislature, Executive Office of the Governor, and the Florida’s Office of Energy housed in the Florida Department of Agriculture and Consumer Services. Overarching to the Consortium’s research strategy is an energy systems approach to identify innovation opportunities, prepare an energy workforce, and guide economic development. Through collaborative research and development across the State University System and the industry, the goal of the consortium is to become a world leader in energy research, education, technology, and energy systems analysis. In so doing, the consortium shall:</p>
-          <ul>
-            <li> Coordinate and initiate increased collaborative interdisciplinary energy research among the universities and the energy industry. </li>
-            <li> Assist in the creation and development of a Florida-based energy technology industry through efforts that would expedite commercialization of innovative energy technologies by taking advantage of the energy expertise within the State University System, high-technology incubators, industrial parks, and industry-driven research centers. </li>
-            <li> Provide a state resource for objective energy systems analysis. </li>
-            <li> Develop education and outreach programs to prepare a qualified energy workforce and informed public.</li>
-          </ul>
-
+    <section class="hero-image">
+      <img src="images/windTurbines.jpg" alt="Wind Turbines">
+      <div class="hero-image-text">
+        <p>Bringing Energy Solutions to Florida, the Nation and the World</p>
       </div>
+    </section>
 
-    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.8/popper.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+
   </div>
 
-  <footer>
-    <a class="twitter-share-button" href="https://northsouth.github.io/HTML300-FESC_redesign/">
-      Tweet</a>
-    <div class="fb-share-button" data-href="https://northsouth.github.io/HTML300-FESC_redesign/" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnorthsouth.github.io%2FHTML300-FESC_redesign%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-  </footer>
 </body>
 
 </html>
