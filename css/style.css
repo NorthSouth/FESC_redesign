@@ -8,7 +8,7 @@
   font-weight: bold; }
 @font-face {
   font-family: bodyFont;
-  src: url("../fonts/Enriqueta-Regular.woff") format("truetype");
+  src: url("../fonts/Enriqueta-Regular.ttf") format("truetype");
   font-weight: normal; }
 @font-face {
   font-family: bodyFont;
