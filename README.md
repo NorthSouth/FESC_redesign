@@ -6,17 +6,23 @@ Class project case study: review and undertake partial redesign of public websit
   2. Added preminary styling to match design doc mock up
   3. Still addressing some issues with formatting
   4. Discovered source of errors in github interpreting @font-face and background image ...
+  
      For @font-face:
+     
        ````
        src: url("../fonts/Enriqueta-Regular.ttf") format("truetype");
+       
        ````
      For background image:
+     
        ````
        background: url(../images/main-menu-hover.png) no-repeat;
        ````
        
      In both cases, it's a problem with the relative path ... apparently when referencing 'url' it's relative to the file that called it (in this case, css/style.css) and not the main directory of the repository
+     
      For @font-face, github doesn't seem to understand 'woff'-format fonts and also requires the format descriptor ... as well as quotation marks around the path
+     
      For background image, it's just a matter of fixing the relatiev path
   
 ## WEEK 3
