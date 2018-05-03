@@ -149,7 +149,7 @@ h5 {
   .menu-test:hover ~ .sliding-background {
     width: 110px;
     background-clip: content-box;
-    background: url("/images/main-menu-hover.png") no-repeat;
+    background: url(/images/main-menu-hover.png) no-repeat;
     -webkit-animation: slide .2s ease-out;
             animation: slide .2s ease-out; }
 

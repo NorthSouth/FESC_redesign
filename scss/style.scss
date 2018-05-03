@@ -227,7 +227,7 @@ h5 {
   &:hover ~ .sliding-background {    
     width: $menu-link-width;
     background-clip: content-box;
-    background: url(/images/main-menu-hover.png) no-repeat;
+    background: url('/images/main-menu-hover.png') no-repeat;
     animation: slide .2s ease-out;
   }
 }
