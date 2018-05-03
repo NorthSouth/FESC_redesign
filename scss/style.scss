@@ -21,18 +21,19 @@ $menu-link-padding:2rem;
 
 @font-face {
   font-family: linkFont;
-  src: url(../fonts/ColabBol.woff);
+  src: url(../fonts/ColabBol.woff) format("woff");
   font-weight: bold;
 }
 
 @font-face {
   font-family: bodyFont;
-  src: url(../fonts/Enriqueta-Regular.woff) ;
+  src: url(../fonts/Enriqueta-Regular.woff) format("woff");
+  font-weight:normal;
 }
 
 @font-face {
   font-family: bodyFont;
-  src: url(../fonts/Enriqueta-Bold.woff) ;
+  src: url(../fonts/Enriqueta-Bold.woff) format("woff");
   font-weight: bold;
 }
 
