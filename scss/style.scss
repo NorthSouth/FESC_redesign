@@ -15,7 +15,8 @@ $menu-link-padding:2rem;
 
 @font-face {
   font-family: linkFont;
-  src: url(../fonts/ColabReg.woff) ;
+  src: url(../fonts/ColabReg.woff) format("woff");
+  font-weight:normal;
 }
 
 @font-face {
