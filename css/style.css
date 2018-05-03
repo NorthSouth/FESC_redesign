@@ -1,16 +1,16 @@
 @font-face {
   font-family: linkFont;
-  src: url(/fonts/ColabReg.woff); }
+  src: url(../fonts/ColabReg.woff); }
 @font-face {
   font-family: linkFont;
-  src: url(/fonts/ColabBol.woff);
+  src: url(../fonts/ColabBol.woff);
   font-weight: bold; }
 @font-face {
   font-family: bodyFont;
-  src: url(/fonts/Enriqueta-Regular.woff); }
+  src: url(../fonts/Enriqueta-Regular.woff); }
 @font-face {
   font-family: bodyFont;
-  src: url(/fonts/Enriqueta-Bold.woff);
+  src: url(../fonts/Enriqueta-Bold.woff);
   font-weight: bold; }
 .main-content-wrapper {
   width: 100%;
@@ -149,7 +149,7 @@ h5 {
   .menu-test:hover ~ .sliding-background {
     width: 110px;
     background-clip: content-box;
-    background: url("/images/main-menu-hover.png") no-repeat;
+    background: url(../images/main-menu-hover.png) no-repeat;
     -webkit-animation: slide .2s ease-out;
             animation: slide .2s ease-out; }
 

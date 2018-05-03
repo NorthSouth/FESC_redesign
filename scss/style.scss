@@ -15,23 +15,23 @@ $menu-link-padding:2rem;
 
 @font-face {
   font-family: linkFont;
-  src: url(/fonts/ColabReg.woff);
+  src: url(../fonts/ColabReg.woff) ;
 }
 
 @font-face {
   font-family: linkFont;
-  src: url(/fonts/ColabBol.woff);
+  src: url(../fonts/ColabBol.woff);
   font-weight: bold;
 }
 
 @font-face {
   font-family: bodyFont;
-  src: url(/fonts/Enriqueta-Regular.woff);
+  src: url(../fonts/Enriqueta-Regular.woff) ;
 }
 
 @font-face {
   font-family: bodyFont;
-  src: url(/fonts/Enriqueta-Bold.woff);
+  src: url(../fonts/Enriqueta-Bold.woff) ;
   font-weight: bold;
 }
 
@@ -61,7 +61,7 @@ $menu-link-padding:2rem;
   top: +100%;
   left: -100%;
   z-index: -1;
-  background: url('/images/main-menu-hover.png') 0 0 no-repeat;
+  background: url(../images/main-menu-hover.png) 0 0 no-repeat;
 }
 
 
@@ -227,7 +227,7 @@ h5 {
   &:hover ~ .sliding-background {    
     width: $menu-link-width;
     background-clip: content-box;
-    background: url('/images/main-menu-hover.png') no-repeat;
+    background: url(../images/main-menu-hover.png) no-repeat;
     animation: slide .2s ease-out;
   }
 }
