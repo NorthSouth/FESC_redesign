@@ -1,24 +1,25 @@
 /*$navbar-padding-bottom: calc(2.75rem );*/
+.dropdown-img-container, .column a {
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out; }
+
 @font-face {
   font-family: linkFont;
   src: url(../fonts/ColabReg.ttf) format("truetype");
-  /*  src: url("/fonts/ColabReg.woff") format("truetype");*/
-  font-weight: normal;
-  /*  src: url(/fonts/ColabReg.woff);*/ }
+  font-weight: normal; }
 @font-face {
   font-family: linkFont;
   src: url(../fonts/ColabBol.ttf) format("truetype");
-  /*  src: url("/fonts/ColabBol.woff") format("truetype");*/
   font-weight: bold; }
 @font-face {
   font-family: bodyFont;
   src: url(../fonts/Enriqueta-Regular.ttf) format("truetype");
-  /*  src: url("/fonts/Enriqueta-Regular.woff") format("truetype");*/
   font-weight: normal; }
 @font-face {
   font-family: bodyFont;
   src: url(../fonts/Enriqueta-Bold.ttf) format("truetype");
-  /*  src: url("/fonts/Enriqueta-Bold.woff") format("truetype");*/
   font-weight: bold; }
 .img-wrapper img {
   height: 100px; }
@@ -144,6 +145,8 @@
   display: block; }
 
 .dropdown-img-container {
+  -webkit-animation-name: dropdown-img-anim;
+          animation-name: dropdown-img-anim;
   padding-top: 1.5rem; }
 
 .dropdown-img-container img {
@@ -167,8 +170,11 @@
   text-decoration: none;
   display: block;
   text-align: left;
-  -webkit-animation: dropdown-anim .3s ease-out;
-          animation: dropdown-anim .3s ease-out; }
+  /*animation: dropdown-anim .3s ease-out;*/
+  /* @extend %dropdown-animation;
+   animation-name:dropdown-anim;*/
+  -webkit-animation-name: dropdown-anim;
+          animation-name: dropdown-anim; }
 
 .column a:hover {
   /*background-color: #ddd;*/
@@ -342,6 +348,20 @@ footer {
   to {
     padding: 16px 16px 16px 16px;
     opacity: 1; } }
+@-webkit-keyframes dropdown-img-anim {
+  from {
+    padding: 0 0 0 0;
+    opacity: .25; }
+  to {
+    padding: 1.5rem 0 0 0;
+    opacity: 1; } }
+@keyframes dropdown-img-anim {
+  from {
+    padding: 0 0 0 0;
+    opacity: .25; }
+  to {
+    padding: 1.5rem 0 0 0;
+    opacity: 1; } }
 @-webkit-keyframes slide {
   0% {
     opacity: 0;
@@ -364,4 +384,4 @@ footer {
     width: 100%;
     height: auto; } }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style-export.css.map */
