@@ -2,7 +2,7 @@
 Class project case study: review and undertake partial redesign of public website (FESC: http://floridaenergy.ufl.edu/) utilizing design best practices
 
 ## WEEK 5
-  1. HTML framework for main page is nearly complete (re-placed placeholder bootstrap layout in dropdown with custom code; built out footer)
+  1. HTML framework for main page is nearly complete (replaced placeholder bootstrap layout in dropdown with custom code; built out footer)
   2. Styling for main page is nearly complete (implemented styling to match the look and feel of the UFL parent site: drop-down mega menu animation, on-hover effects for social media icons)
 
 ## WEEK 4
