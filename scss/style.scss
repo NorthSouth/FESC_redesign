@@ -26,7 +26,7 @@ $navbar-font-size: 1.25rem;
 
 @font-face {
   font-family: linkFont;
-  src: url(../fonts/ColabReg.woff) format("truetype");
+  src: url("../fonts/ColabReg.woff") format("truetype");
 /*  src: url("/fonts/ColabReg.woff") format("truetype");*/
   font-weight: normal;
   /*  src: url(/fonts/ColabReg.woff);*/
@@ -34,21 +34,21 @@ $navbar-font-size: 1.25rem;
 
 @font-face {
   font-family: linkFont;
-  src: url(../fonts/ColabBol.woff) format("truetype");
+  src: url("../fonts/ColabBol.woff") format("truetype");
 /*  src: url("/fonts/ColabBol.woff") format("truetype");*/
   font-weight: bold;
 }
 
 @font-face {
   font-family: bodyFont;
-   src: url(../fonts/Enriqueta-Regular.woff) format("truetype");
+   src: url("../fonts/Enriqueta-Regular.woff") format("truetype");
 /*  src: url("/fonts/Enriqueta-Regular.woff") format("truetype");*/
   font-weight: normal;
 }
 
 @font-face {
   font-family: bodyFont;
-  src: url(../fonts/Enriqueta-Bold.woff) format("truetype");
+  src: url("../fonts/Enriqueta-Bold.woff") format("truetype");
 /*  src: url("/fonts/Enriqueta-Bold.woff") format("truetype");*/
   font-weight: bold;
 }
