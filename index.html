@@ -7,8 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>-->
+
   <link rel="stylesheet" href="css/style.css">
 
 
@@ -19,171 +20,135 @@
   <!--<nav class="navbar navbar-expand-lg navbar-light bg-light rounded">  -->
   <div class="main-content-wrapper">
     <div class="search-bar">&nbsp;</div>
-    <nav class="navbar navbar-expand-lg navbar-light  rounded">
-      <!--<div class="container ">-->
-      <a class="navbar-brand" href="#">
-          <img src="./images/header_logo.png" class="d-inline-block align-top nav-image-left" alt="">
+    <div class="nav-container">
+      <div class="fesc-image-container">
+        <a href="">
+          <img src="./images/header_logo.png" class="nav-image-left" alt="FESC logo">
         </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-		  </button>
-      <div class="collapse navbar-collapse" id="navbar">
-        <div class="container">
-          <div class="navbar-nav row ">
-            <div class="col-sm nav-item dropdown megamenu-li">
-              <!-- <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mega Menu 1</a>-->
-              <div class="link-container" >
-                <a class="nav-link menu-test" href="" id="dropdown01" aria-haspopup="true" aria-expanded="false">Education</a>
-                <div class="sliding-background">&nbsp;</div>
-              </div>
-              <!--<a class="nav-link " href="" id="dropdown01" aria-haspopup="true" aria-expanded="false" >Mega Menu 1</a>-->
-              <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
-                <div class="row">
-                  <div class="col-sm-6 col-lg-3">
-                    <h5>Links</h5>
-                    <a class="dropdown-item" href="#">Link 1</a>
-                    <a class="dropdown-item" href="#">Link 2</a>
-                    <a class="dropdown-item" href="#">Link 1</a>
-                    <a class="dropdown-item" href="#">Link 2</a>
-                  </div>
-                  <div class="col-sm-6 col-lg-3">
-                    <h5>More Links</h5>
-                    <a class="dropdown-item" href="#">Link 1</a>
-                    <a class="dropdown-item" href="#">Link 2</a>
-                    <a class="dropdown-item" href="#">Link 1</a>
-                  </div>
-                  <div class="col-sm-6 col-lg-3">
-                    <h5>Paragraph</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus in veritatis, facilis eligendi sunt, culpa autem harum porro earum.</p>
-                  </div>
-                  <div class="col-sm-6 col-lg-3">
-                    <h5>Image</h5>
-                    <!--<img src="https://source.unsplash.com/250x150/?sig=4" alt="..." style="width: 100%;">-->
-                    <div alt="img-wrapper">
-                      <img src="images/section/academics.jpg" height=100px; alt="...">
-                    </div>
-                  </div>
+      </div>
+      <!--  </div>-->
+      <div class="navbar">
+        <div class="dropdown dropbtn">
+          <!--<div class="dropbtn">about </div> -->  
+          education
+          <div class="sliding-background">&nbsp;</div>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <div class="dropdown-img-container">
+                  <img src="images/section/academics.jpg">
                 </div>
               </div>
-            </div>
-            <div class="col-sm nav-item dropdown megamenu-li">
-              <!-- <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mega Menu 1</a>-->
-              <div class="link-container">
-                <a class="nav-link menu-test" href="" id="dropdown01" aria-haspopup="true" aria-expanded="false">Outreach</a>
-                <div class="sliding-background">&nbsp;</div>
+              <div class="column">
+                <h3>Category 1</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
               </div>
-              <!--<a class="nav-link " href="" id="dropdown01" aria-haspopup="true" aria-expanded="false" >Mega Menu 1</a>-->
-              <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
-                <div class="row">
-                  <div class="col-sm-6 col-lg-3">
-                    <h5>Links</h5>
-                    <a class="dropdown-item" href="#">Link 1</a>
-                    <a class="dropdown-item" href="#">Link 2</a>
-                    <a class="dropdown-item" href="#">Link 1</a>
-                    <a class="dropdown-item" href="#">Link 2</a>
-                  </div>
-                  <div class="col-sm-6 col-lg-3">
-                    <h5>More Links</h5>
-                    <a class="dropdown-item" href="#">Link 1</a>
-                    <a class="dropdown-item" href="#">Link 2</a>
-                    <a class="dropdown-item" href="#">Link 1</a>
-                  </div>
-                  <div class="col-sm-6 col-lg-3">
-                    <h5>Paragraph</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus in veritatis, facilis eligendi sunt, culpa autem harum porro earum.</p>
-                  </div>
-                  <div class="col-sm-6 col-lg-3">
-                    <h5>Image</h5>
-                    <!--<img src="https://source.unsplash.com/250x150/?sig=4" alt="..." style="width: 100%;">-->
-                    <div alt="img-wrapper">
-                      <img src="images/section/go_greater.jpg" height=50px alt="...">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm nav-item dropdown megamenu-li">
-              <!-- <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mega Menu 1</a>-->
-              <div class="link-container">
-                <a class="nav-link menu-test" href="" id="dropdown01" aria-haspopup="true" aria-expanded="false">About</a>
-                <div class="sliding-background">&nbsp;</div>
-              </div>
-              <!--<a class="nav-link " href="" id="dropdown01" aria-haspopup="true" aria-expanded="false" >Mega Menu 1</a>-->
-              <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
-                <div class="row">
-                  <div class="col-sm-6 col-lg-3">
-                    <h5>Links</h5>
-                    <a class="dropdown-item" href="#">Link 1</a>
-                    <a class="dropdown-item" href="#">Link 2</a>
-                    <a class="dropdown-item" href="#">Link 1</a>
-                    <a class="dropdown-item" href="#">Link 2</a>
-                  </div>
-                  <div class="col-sm-6 col-lg-3">
-                    <h5>More Links</h5>
-                    <a class="dropdown-item" href="#">Link 1</a>
-                    <a class="dropdown-item" href="#">Link 2</a>
-                    <a class="dropdown-item" href="#">Link 1</a>
-                  </div>
-                  <div class="col-sm-6 col-lg-3">
-                    <h5>Paragraph</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus in veritatis, facilis eligendi sunt, culpa autem harum porro earum.</p>
-                  </div>
-                  <div class="col-sm-6 col-lg-3">
-                    <h5>Image</h5>
-                    <!--<img src="https://source.unsplash.com/250x150/?sig=4" alt="..." style="width: 100%;">-->
-                    <div alt="img-wrapper">
-                      <img src="images/section/about.jpg" height=100px alt="...">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm nav-item dropdown megamenu-li">
-              <!-- <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mega Menu 1</a>-->
-              <div class="link-container">
-                <a class="nav-link menu-test" href="" id="dropdown01" aria-haspopup="true" aria-expanded="false">Contact</a>
-                <div class="sliding-background">&nbsp;</div>
-              </div>
-              <!--<a class="nav-link " href="" id="dropdown01" aria-haspopup="true" aria-expanded="false" >Mega Menu 1</a>-->
-              <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
-                <div class="row">
-                  <div class="col-sm-6 col-lg-3">
-                    <h5>Links</h5>
-                    <a class="dropdown-item" href="#">Link 1</a>
-                    <a class="dropdown-item" href="#">Link 2</a>
-                    <a class="dropdown-item" href="#">Link 1</a>
-                    <a class="dropdown-item" href="#">Link 2</a>
-                  </div>
-                  <div class="col-sm-6 col-lg-3">
-                    <h5>More Links</h5>
-                    <a class="dropdown-item" href="#">Link 1</a>
-                    <a class="dropdown-item" href="#">Link 2</a>
-                    <a class="dropdown-item" href="#">Link 1</a>
-                  </div>
-                  <div class="col-sm-6 col-lg-3">
-                    <h5>Paragraph</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus in veritatis, facilis eligendi sunt, culpa autem harum porro earum.</p>
-                  </div>
-                  <div class="col-sm-6 col-lg-3">
-                    <h5>Image</h5>
-                    <!--<img src="https://source.unsplash.com/250x150/?sig=4" alt="..." style="width: 100%;">-->
-                    <div alt="img-wrapper">
-                      <img src="images/section/campuslife.jpg" height=100px alt="...">
-                    </div>
-                  </div>
-                </div>
+              <div class="column">
+                <h3>Category 2</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
               </div>
             </div>
           </div>
         </div>
+        <div class="dropdown dropbtn">
+          <!--<div class="dropbtn">about </div> -->  
+          outreach
+          <div class="sliding-background">&nbsp;</div>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <h3>Category 1</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <div class="column">
+                <h3>Category 2</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <!--  <div class="column">
+                <h3>Category 3</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>-->
+            </div>
+          </div>
+        </div>
+        <div class="dropdown dropbtn">
+          <!--<div class="dropbtn">about </div> -->  
+          about
+          <div class="sliding-background">&nbsp;</div>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <h3>Category 1</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <div class="column">
+                <h3>Category 2</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <!--  <div class="column">
+                <h3>Category 3</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>-->
+            </div>
+          </div>
+        </div>
+        <div class="dropdown dropbtn">
+          <!--<div class="dropbtn">about </div> -->  
+          contact
+          <div class="sliding-background">&nbsp;</div>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <h3>Category 1</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <div class="column">
+                <h3>Category 2</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <!--  <div class="column">
+                <h3>Category 3</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>-->
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="uf-image-container">
-        <a class="navbar-brand" href="http://www.ufl.edu/" target="_blank">
-          <img src="./images/logo-uf.png" class="d-inline-block align-top nav-image-right" alt="u florida">
+
+
+      <a href="http://www.ufl.edu/" target="_blank">
+          <img src="./images/logo-uf.png" class="nav-image-right" alt="u florida">
         </a>
-      </div>
-      <!--  </div>-->
-    </nav>
+    </div>
+    <div style="padding:16px">
+      <!--    <h3>Responsive Mega Menu (Full-width dropdown in navbar)</h3>
+      <p>Hover over the "Dropdown" link to see the mega menu.</p>
+      <p>Resize the browser window to see the responsive effect.</p>-->
+    </div>
+
+
     <section class="hero-image">
       <img src="images/windTurbines.jpg" alt="Wind Turbines">
       <div class="hero-image-text">
@@ -191,11 +156,91 @@
       </div>
     </section>
 
+    <footer>
+      <div class="flex-grid">
+        <div class="col-footer">
+          <div class="row-footer-logos">
+            <div class="cartouche">
+              <a href="http://www.ufl.edu/" target="_blank">
+              <img src="images/logos/logo_01.png" alt="u florida"></a>
+            </div>
+            <div class="cartouche">
+              <a href="https://www.fsu.edu/" target="_blank">
+              <img src="images/logos/logo_02.png" alt="florida state u"></a>
+            </div>
+            <div class="cartouche">
+              <a href="https://www.ucf.edu/" target="_blank">
+              <img src="images/logos/logo_03.png" alt="u central florida"></a>
+            </div>
+            <div class="cartouche">
+              <a href="http://www.usf.edu/" target="_blank">
+              <img src="images/logos/logo_04.png" alt="u south florida"></a>
+            </div>
+            <div class="cartouche">
+              <a href="http://www.famu.edu/" target="_blank">
+              <img src="images/logos/logo_05.png" alt="florida agricultural"></a>
+            </div>
+            <div class="cartouche">
+              <a href="https://www.fau.edu/" target="_blank">
+              <img src="images/logos/logo_06.png" alt="florida atlantic u"></a>
+            </div>
+            <div class="cartouche">
+              <a href="https://www.fgcu.edu/" target="_blank">
+              <img src="images/logos/logo_07.png" alt="florida gulf coast u"></a>
+            </div>
+            <div class="cartouche">
+              <a href="https://www.fiu.edu/" target="_blank">
+              <img src="images/logos/logo_08.png" alt="florida international u"></a>
+            </div>
+            <div class="cartouche">
+              <a href="https://www.ncf.edu/" target="_blank">
+              <img src="images/logos/logo_09.png" alt="new college"></a>
+            </div>
+            <div class="cartouche">
+              <a href="http://www.unf.edu/" target="_blank">
+              <img src="images/logos/logo_10.png" alt="u north florida"></a>
+            </div>
+            <div class="cartouche">
+              <a href="https://uwf.edu/" target="_blank">
+              <img src="images/logos/logo_11.png" alt="u west florida"></a>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="col-footer">
+            <div class="row-footer">
+              <img src="images/logos/footer_logo.png" alt="FESC logo" class="footer-fesc-logo">
+            </div>
+            <div class="row-footer">
+              <div class="footer-address">
+                272 Grinter Hall | PO Box 115500<br> Gainesville, FL 32611-5500
+              </div>
+            </div>
+            <div class="row-footer social-media-icons">
+              <div class="icon-bubble">
+                <a href="https://www.facebook.com/FLEnergySC/" target="_blank">
+                  <i class="fa-icon fa fa-facebook-f"></i></a>
+              </div>
+              <div class="icon-bubble">
+                <a href="https://twitter.com/FESC_UF" target="_blank">
+                  <i class="fa-icon fa fa-twitter"></i></a>
+              </div>
+              <div class="icon-bubble">
+                <a href="https://www.linkedin.com/groups/5102147/profile" target="_blank">
+                  <i class="fa-icon fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </footer>
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.8/popper.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
 
     <script src="js/index.js"></script>
+    <script src="js/index2.js"></script>
 
 
   </div>
