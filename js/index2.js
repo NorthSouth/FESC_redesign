@@ -22,13 +22,11 @@ Array.prototype.forEach.call( ids, function( el, i ) {
 
 function onClickHeroBtn() {
   document.getElementById("hero-image-overlay").style.display="block";
-  console.log("here!");
   document.getElementById("hero-image-text").style.display="none";
   document.getElementById("hero-nav-button").style.display="none";
    document.getElementById("hero-image-overlay").classList.add("hero-image-button-clicked");
   document.getElementById("hero-image-overlay").style.opacity=fadeAnimationFinalOpacity;
   document.getElementById("image-overlay-info").style.display="block"; 
-  
 }
 
 function onClickOverlay(){
@@ -77,7 +75,6 @@ function showSlides(n) {
 }
 
 function closeSlideShow(){
-  console.log("close?");
   var overlayInfo = document.getElementById("image-overlay-info");
   var overlayImage = document.getElementById("hero-image-overlay");
   
@@ -85,11 +82,22 @@ function closeSlideShow(){
   var heroImage = document.getElementById("hero-image-text").style.display="block";
   var heroButton = document.getElementById("hero-nav-button").style.display="block";
   
+  
+  var iframes = document.getElementsByTagName("iframe");
+  
   overlayInfo.style.display="none";
   overlayImage.style.display="none";
   currentSlide(1);
-  console.log("closed");
+  
+  if (iframes != null) {
+    for (var i = 0; i < iframes.length; i++) {
+        iframes[i].src = iframes[i].src; //causes a reload so it stops playing, music, video, etc.
+    }
+  }
 }
+
+// YOUTUBE PLAYERS
+
 
 // viewport size test functions
 
@@ -139,7 +147,9 @@ var imgOverlayNodeList= document.getElementsByClassName("hero-image-overlay");
 
 for (i=0; i<imgOverlayNodeList.length; i++){
   imgOverlayNodeList[i].addEventListener("click", onClickOverlay);
-  console.log("!");
 }
 
-getViewport();
+//will be youtube player references once API is loaded
+var players = [];
+
+/*getViewport();*/
