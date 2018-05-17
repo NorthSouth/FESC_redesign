@@ -290,7 +290,6 @@ body {
 
 .dropdown-content {
   display: none;
-  /*  display:block; */
   position: absolute;
   /*margin-top:5.5rem;*/
   background-color: #f9f9f9;
@@ -324,7 +323,7 @@ body {
   padding-top: .5rem; }
 
 .figcaption-text {
-  font-size: .9rem; }
+  font-size: 0.9rem; }
 
 .dropdown-img-container img {
   height: 200px; }

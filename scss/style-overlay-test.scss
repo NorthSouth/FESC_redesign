@@ -28,6 +28,8 @@ $navbar-font-size: 1.25rem;
 $navbar-column-font-size: $navbar-font-size;
 $navbar-column-4-font-size:calc(#{$navbar-font-size} - .25rem);
 
+$fig-caption-font-size:.9rem;
+
 // z-indexes
 $hero-img-overlay-zindex:1;
 $img-overlay-info-zindex:2;
@@ -190,7 +192,6 @@ body {
 
 .dropdown-content {
   display: none;
-/*  display:block; */
   position: absolute;
   /*margin-top:5.5rem;*/
   background-color: #f9f9f9;
@@ -228,7 +229,7 @@ body {
 }
 
 .figcaption-text {
-  font-size:.9rem;
+  font-size:$fig-caption-font-size;
 }
 
 .dropdown-img-container img {

@@ -1,0 +1,52 @@
+.card-container {
+  cursor: pointer;
+  /*height: 150px;*/
+  perspective: 600;
+  position: relative;
+ /* width: 150px;*/
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 50%;
+  margin:auto;
+  left:25%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  /*border-radius: 6px;*/
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card .back {
+  /*background: #eaeaed;*/
+  background-color: $uf-menu-bg;
+  color: $uf-blue;
+  /*line-height: 150px;*/
+  text-align: center;
+  transform: rotateY(180deg);
+  height:75%;
+  font-size:calc(#{$fig-caption-font-size} + .1);
+}
+
+.card-back-info-wrapper {
+  padding-top:2rem;
+  height:70%;
+  margin:auto;
+}
+
+.card-email {
+  text-transform: lowercase;
+}
+
+.card-position {
+  /*font-size:calc(#{$fig-caption-font-size} - .1rem );*/
+  font-size:calc(#{$fig-caption-font-size} + .1rem);
+}
