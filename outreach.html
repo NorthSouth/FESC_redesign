@@ -2,147 +2,256 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <title class="pageTitle" id="outreach">Community Outreach</title>
 
 
-  <title>FESC-Education</title>
-  <!--  <script src="script.js"></script>-->
-  <!--<link rel="stylesheet" type="text/css" href="./css/styles.css">-->
 
-  <!-- facebook tags -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-  <meta property="og:title" content="Florida Energy Consortium">
-  <meta property="og:image" content="images/header_logo.png">
-  <meta property="og:url" content="https://northsouth.github.io/HTML300-FESC_redesign/">
-  <meta proprerty="og:description" content="Universities Addressing Florida Energy Needs">
-  <meta property="og:image:height" content="521">
-  <meta property="og:image:width" content="184">
-  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-  <!-- twitter tags -->
-  <meta name="twitter:title" content="Florida Energy Consortium">
-  <meta name="twitter:description" content="Universities Addressing Florida Energy Needs">
-  <meta name="twitter:image" content="images/header_logo.png">
-  <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/support-page-style.css">
 
-  <style>
-    .content-container {
-      width: 90%;
-      margin: auto;
-    }
-
-    .flex-container {
-      width: 60%;
-      display: flex;
-      flex-direction: column;
-      margin-left: 2rem;
-      margin-right: 2rem;
-      padding-bottom: 1rem;
-      text-align: left;
-    }
-
-    img {
-      height: 10%;
-      margin: auto;
-    }
-
-    footer {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      width: 60%;
-      margin-left: 2rem;
-      margin-right: 2rem;
-      border-top: 1px solid black;
-      padding-top: 1rem;
-    }
-  </style>
-
-  <script>
-    window.twttr = (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0],
-        t = window.twttr || {};
-      if (d.getElementById(id)) return t;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://platform.twitter.com/widgets.js";
-      fjs.parentNode.insertBefore(js, fjs);
-
-      t._e = [];
-      t.ready = function(f) {
-        t._e.push(f);
-      };
-
-      return t;
-    }(document, "script", "twitter-wjs"));
-  </script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
-<body>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
-  <!--facebook share button-->
-  <div id="fb-root"></div>
-  <script>
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-
-  <div class="content-container">
-    <div><a href="index.html"><img src="images/logos/header_logo.png" alt="FESC"></a></div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">FESC</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="education.html">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="outreach.html">Outreach <span class="sr-only">(current)</span></a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>-->
-        </ul>
-        <!--<form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>-->
-      </div>
-    </nav>
-    <h1>Public Outreach: Fact Sheets, Videos, and Research Areas</h1>
-    <div class="flex-container">
-      <div>
-        <p>FThe overall twin goals of the FESC Outreach effort are to increase Florida’s energy use efficiency and to measurably reduce its emissions of greenhouse gases. Dr. Pierce Jones, Professor & Director, Program for Resources Efficient Communities, UF, leads outreach through his experience with the Florida Cooperative Extension Service.</p>
-
-        <p>Educational materials and programs developed by FESC are based on energy and climate research findings and analysis conducted at Florida’s state universities as well as national sources. Outreach programs are designed to deliver practical, applicable information and knowledge to targeted groups including: the general public, professionals, local officials and state policymakers.</p>
-      </div>
+<body onresize="toggleToTopButton();">
+  <div class="main-content-wrapper" id="main-content-wrapper">
+    <div class="search-bar">
 
     </div>
+
+    <div class="nav-container">
+      <div class="fesc-image-container">
+        <a href="index.html">
+          <img src="./images/header_logo.png" class="nav-image-left" alt="FESC logo">
+        </a>
+      </div>
+      <!--  </div>-->
+      <div class="navbar">
+        <div class="dropdown dropbtn">
+          <!--<div class="dropbtn">about </div> -->
+          education
+          <div class="sliding-background">&nbsp;</div>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <div class="dropdown-img-container">
+                  <img src="images/section/academics.jpg">
+                </div>
+              </div>
+              <div class="column">
+                <h3>Category 1</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <div class="column">
+                <h3>Category 2</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropbtn-active active-link">
+          <!--<div class="dropbtn">about </div> -->
+          outreach
+          <div class="sliding-background">&nbsp;</div>
+          <!--          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <h3>Category 1</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <div class="column">
+                <h3>Category 2</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+                <div class="column">
+                <h3>Category 3</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+          </div>-->
+        </div>
+        <div class="dropdown dropbtn">
+          <!--<div class="dropbtn">about </div> -->
+          about
+          <div class="sliding-background">&nbsp;</div>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <h3>Category 1</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <div class="column">
+                <h3>Category 2</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <!--  <div class="column">
+                <h3>Category 3</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>-->
+            </div>
+          </div>
+        </div>
+        <div class="dropdown dropbtn">
+          <!--<div class="dropbtn">about </div> -->
+          contact
+          <div class="sliding-background">&nbsp;</div>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <h3>Category 1</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <div class="column">
+                <h3>Category 2</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <!--  <div class="column">
+                <h3>Category 3</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>-->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <a href="http://www.ufl.edu/" target="_blank">
+          <img src="./images/logo-uf.png" class="nav-image-right" alt="u florida">
+        </a>
+    </div>
+    <div class="hero-nav" name="top" id="hero-nav">
+      <div class="hero-nav-inner">
+        <h1>Community Outreach</h1>
+      </div>
+    </div>
+    <div class="page-content" id="page-content">
+      <p>
+        The twin goals of the <b>FESC Outreach effort</b> are to increase Florida’s energy use efficiency and to measurably reduce its emissions of greenhouse gases. Dr. Pierce Jones, Professor and Director, Program for Resources Efficient Communities, UF, leads outreach through his experience with the Florida Cooperative Extension Service.
+      </p>
+      <p>
+        Educational materials and programs developed by FESC are based on energy and climate research findings and analysis conducted at Florida’s state universities as well as national sources. Outreach programs are designed to deliver practical, applicable information and knowledge to targeted groups including: the general public, professionals, local officials and state policymakers.
+      </p>
+
+      <p style="text-align:center;"><span><i>Please use the links above to view Energy Awareness Fact Sheets, Energy Video Clips, and other important resources for Florida homeowners.</i></span></p>
+
+      <p>FESC is currently developing plans to leverage the existing network of extension offices to reach out to each of our communities. The <b><a href="http://sfyl.ifas.ufl.edu/" target="_blank">Florida Cooperative Extension Service</a></b> has experience developing and delivering educational programs and products related to energy- and resource-efficient community development with emphasis on housing. These programs and products include targeted continuing education courses for licensed builders, architects, engineers, landscape architects, interior designers, and others, and can be found under the Education section of this website. Also, the <b><a href="http://www.buildgreen.ufl.edu/" target="_blank">UF Program for Resource Efficient Communities</a></b> is an interdisciplinary group that promotes the adoption of best design, construction, and management practices in new residential master planned developments. FESC will work with these existing networks to provide programming on efficient use of energy and alternative energy generation methods to the general public as well as targeted to specific audiences such as builders, land planners, solar panel installers, and architects.</p>
+
+      <div class="up-btn-wrapper">
+        <a href="#" onclick="scrollToTop();"><i class="up-btn fas fa-angle-up"></i></a>
+      </div>
+    </div>
+
   </div>
 
   <footer>
-    <a class="twitter-share-button" href="https://northsouth.github.io/HTML300-FESC_redesign/">
-      Tweet</a>
-    <div class="fb-share-button" data-href="https://northsouth.github.io/HTML300-FESC_redesign/" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnorthsouth.github.io%2FHTML300-FESC_redesign%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+    <!--
+    <div class="row-bottom-nav">
+      <div class="botton-nav-title-wrapper">
+        <div class="bottom-nav-title">
+          OUTREACH
+        </div>
+      </div>
+      <div class="bottom-nav-links-wrapper">
+        <div class="bottom-nav-links">
+          Link1
+        </div>
+        <div class="bottom-nav-links">
+          Link2
+        </div>
+      </div>
+      <div class="bottom-nav-toggle-btn-wrapper">
+        <div class="bottom-nav-toggle-btn">
+          <i class="up-btn fas fa-angle-up"></i>
+        </div>
+      </div>
+    </div>-->
+    <div class="bottom-nav">
+      <h3>
+        <div class="botton-nav-title-wrapper">
+          <div class="bottom-nav-title">
+            program overview
+          </div>
+        </div>
+        <div class="bottom-nav-header-wrapper">
+          <div class="bottom-nav-header">
+          LINKS
+          </div>
+        </div>
+        <div class="bottom-nav-toggle-btn-wrapper slide-trigger ">
+          <i class="material-icons up-btn fas fa-angle-up"></i>
+        </div>
+      </h3>
+      <div class="rich-area">
+        <div class="rich-area-link-wrapper">
+          <div class="rich-area-row">
+            <div class="rich-area-col">
+              <h4>
+                Information
+              </h4>
+              <div class="sub-link-wrapper">
+               <!-- <a href="#" class="active-link-rich">Program Overview</a>-->
+                <a href="#">Fact Sheets</a>
+                <a href="#">Video Clips</a>
+              </div>
+            </div>
+            <div class="rich-area-col">
+              <h4>
+                Links
+              </h4>
+              <div class="sub-link-wrapper">
+                <a href="#">Calculators and Other Resources</a>
+                <a href="#">Research Areas</a>
+                <a href="#">News</a>
+              </div>
+            </div>
+          <!--    <i class="material-icons">skip_previous</i>
+        <i class="material-icons">play_arrow</i>
+        <i class="material-icons">skip_next</i>-->
+        </div>
+      </div>
+    </div>
+    </div>
   </footer>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.8/popper.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+
+  <script src="js/json-text.js"></script>
+  <script src="js/index-scroller.js"></script>
+  <!--<script src="js/index2.js"></script>-->
+  <script src="js/index3.js"></script>
+  <script src="js/bottom-nav.js"></script>
+
+
+
+
 </body>
 
 </html>

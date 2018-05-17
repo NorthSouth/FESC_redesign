@@ -1,0 +1,205 @@
+// z-indexes
+$slideshow-nav-dots-zindex: 4;
+
+
+.mySlides {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+
+.slideshow-container,
+slideshow-wrapper {
+  /*max-width: 1000px;*/
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 6px 2px 2px 6px;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+  right: 0;
+  border-radius: 2px 6px 6px 2px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Caption/Slide text */
+
+.text {
+  /*  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;*/
+  box-sizing: border-box;
+  color: #f2f2f2;
+  position: absolute;
+  width: 95%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  line-height: 1.5rem;
+  transform: translate(-50%, -50%);
+  /*padding: 8px 12px;*/
+  padding: 2rem 4rem;
+}
+
+/* video caption text */
+.text-caption {
+  font-size: 1rem;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  a {
+    color:$uf-orange-lighter;
+    font-size:.9rem;
+    text-transform:uppercase;
+    opacity:.8;
+  }
+  a:link {
+    text-decoration:none;
+  }
+  a:hover{
+    opacity:1;
+  }
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* close icon */
+
+.slideshowClose {
+  position: absolute;
+  top: 2%;
+  right: 0;
+  .closeIcon {
+    font-size: 1.5rem;
+    opacity: .5;
+    &:hover {
+      opacity: 1;
+      transition: opacity .1s linear;
+    }
+  }
+}
+
+/* video */
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 0;
+  height: 0;
+  width:95%;
+  iframe {
+    position: absolute;
+    top: 15%;
+    left: 27.5%;
+    width: 50%;
+    height: 28.125%; // 16:9 aspect ratio
+  }
+}
+
+/* The dots/bullets/indicators */
+
+.slideshowNavDots {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  z-index: 4;
+  z-index: $slideshow-nav-dots-zindex;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+
+/*@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}*/
+
+// move media queries to main scss file
