@@ -6,6 +6,7 @@ Class project case study: review and undertake partial redesign of public websit
   2. Implemented several new features including a slide show, parallax viewer and bottom nav on secondary page
   3. Still a WIP - main mega menu on secondary page needs to be tweaked to work with the new format
   4. github bug related to the background image on the secondary page not loading
+  5. NOTE: outreach > program overview is the only other page currently with additional content. 
 
 ## WEEK 5
   1. HTML framework for main page is nearly complete (replaced placeholder bootstrap layout in dropdown with custom code; built out footer)
