@@ -4,6 +4,7 @@ Class project case study: review and undertake partial redesign of public websit
 ## WEEK 5
   1. HTML framework for main page is nearly complete (replaced placeholder bootstrap layout in dropdown with custom code; built out footer)
   2. Styling for main page is nearly complete (implemented styling to match the look and feel of the UFL parent site: drop-down mega menu animation, on-hover effects for social media icons)
+  3. Utilized more of SASS's capabilities
 
 ## WEEK 4
   1. Built out main page of site
