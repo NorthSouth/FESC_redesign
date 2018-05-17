@@ -27,10 +27,10 @@ function assignBackgroundImage() {
   // add modularity by detecting pageTitle attribute and assigning a background image to top of page
   switch(pageTitle) {
     case "about":
-      document.getElementsByClassName("hero-nav")[0].setAttribute("style", "background-image:url("../images/section/about3.jpg");");
+      document.getElementsByClassName("hero-nav")[0].setAttribute("style", "background-image:url(../images/section/about3.jpg) no-repeat;");
       break;
     case "outreach":
-      document.getElementsByClassName("hero-nav")[0].setAttribute("style", "background-image:url("../images/section/community-outreach-banner.jpg");");
+      document.getElementsByClassName("hero-nav")[0].setAttribute("style", "background-image:url(../images/section/community-outreach-banner.jpg) no-repeat;");
       break;
   }
 
