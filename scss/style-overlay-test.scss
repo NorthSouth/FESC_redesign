@@ -260,6 +260,9 @@ body {
   padding: 10px;
   background-color: $uf-menu-bg;
   height: 250px;
+  h3 {
+    font-size:calc(#{$navbar-column-4-font-size} + .1rem)
+  }
 }
 
 .column a {
