@@ -20,6 +20,11 @@ Array.prototype.forEach.call( ids, function( el, i ) {
 });*/
 
 
+function refreshTopNav() {
+  location.reload(forceGet);
+}
+
+
 function onClickHeroBtn() {
   document.getElementById("hero-image-overlay").style.display="block";
   document.getElementById("hero-image-text").style.display="none";
