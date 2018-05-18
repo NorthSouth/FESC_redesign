@@ -106,7 +106,7 @@ footer {
 
 // NAV CODE
 .bottom-nav {
-  transition: height 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+  /*transition: height 300ms cubic-bezier(0.4, 0.0, 0.2, 1);*/
   height: 48px;
   overflow: hidden;
   width: 100%;
@@ -133,7 +133,7 @@ footer {
     width: 1px;
     height: 1px;
     user-select: none;
-    transition: transform 350ms;
+    /*transition: transform 350ms;*/
     /*transition: transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1);*/
     display: flex;
     justify-content: center;
@@ -155,17 +155,24 @@ footer {
     /*padding-bottom:1rem;*/
     z-index: $bottom-nav-z-index;
   }
+  &::before {
+    transition: height 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+  }
+}
+
+.bottom-nav i::before {
+  transition: transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 // NAV LINK SUB MENU
 .rich-area-link-wrapper {
   /*position:relative;*/
-  width: 78%;
+  width: 80%;
   /* left:0%;*/
   padding-left: 0;
   padding-top: 0;
  /* padding-bottom: .5rem;*/
-  transform: translate(-3rem, 0);
+  transform: translate(-2rem, 0);
 }
 
 .bottom-nav-header{
