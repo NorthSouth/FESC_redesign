@@ -1,5 +1,7 @@
-/*var element = document.getElementById("main-content-wrapper");*/
-var element = document.getElementById("hero-nav");
+
+function refreshTopNav() {
+  $("#topNav").load(window.location.href + "#topNav");
+}
 
 function scrollToTop() {
   element.scrollIntoView(true); // Top
@@ -36,6 +38,9 @@ function assignBackgroundImage() {
   }
 
 }
+
+/*var element = document.getElementById("main-content-wrapper");*/
+var element = document.getElementById("hero-nav");
 
 assignBackgroundImage();
 toggleToTopButton();
