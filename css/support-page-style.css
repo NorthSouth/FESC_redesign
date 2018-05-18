@@ -692,7 +692,8 @@ body {
     font-family: linkFont; }
   .hero-nav h1 {
     color: #efefef;
-    font-size: 5vw; }
+    font-size: 5vw;
+    font-size: 5rem; }
   .hero-nav:before {
     content: "";
     background: rgba(0, 0, 0, 0);
@@ -833,7 +834,10 @@ body {
     font-size: calc(1.25rem - .25rem); }
 
   .bottom-nav-title {
-    font-size: .9rem; } }
+    font-size: .9rem; }
+
+  .hero-nav h1 {
+    font-size: calc(5rem - 1rem); } }
 @media only screen and (max-width: 1200px) {
   .text {
     font-size: .9rem; } }
