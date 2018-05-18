@@ -27,8 +27,10 @@ function assignBackgroundImage() {
       document.getElementsByClassName("hero-nav")[0].setAttribute("style", "background-image:url(images/section/about3.jpg);");
       break;
     case "outreach":
-     /* document.getElementsByClassName("hero-nav")[0].setAttribute("style", "background-image:url(../images/section/community-outreach-banner.jpg) no-repeat;");*/
       document.getElementsByClassName("hero-nav")[0].setAttribute("style", "background-image:url(images/section/community-outreach-banner.jpg);");
+      break;
+    case "education":
+      document.getElementsByClassName("hero-nav")[0].setAttribute("style", "background-image:url(images/section/education-banner.jpg);");
       break;
   }
 
