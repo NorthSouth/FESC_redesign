@@ -28,8 +28,7 @@ img {
   vertical-align: middle; }
 
 /* Slideshow container */
-.slideshow-container,
-slideshow-wrapper {
+.slideshow-container {
   /*max-width: 1000px;*/
   position: relative;
   margin: auto; }
@@ -189,7 +188,9 @@ slideshow-wrapper {
 /*@import '_cardFlip-partial.scss';*/
 body {
   min-width: 950px;
-  min-height: 850px; }
+  /*min-height: 850px;*/
+  margin: 0;
+  padding: 0; }
 
 .img-wrapper img {
   height: 100px; }
@@ -205,7 +206,7 @@ body {
 
 .main-content-wrapper {
   width: 100%;
-  margin: auto; }
+  /* margin: auto;*/ }
 
 .search-bar {
   background-color: #b84300;

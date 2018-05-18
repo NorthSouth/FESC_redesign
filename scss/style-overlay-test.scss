@@ -9,6 +9,7 @@ $separator-color:lightgray;
 $menu-underline-from-center-bg: #2C3840;
 $menu-underline-from-center-border-thickness: 0.125rem;
 
+$min-page-width:950px;
 $main-page-width:100%;
 $drop-down-menu-padding:1rem;
 
@@ -82,8 +83,10 @@ $sliding-background-zindex:20;
 
 //
 body {
-  min-width: 950px;
-  min-height: 850px;
+  min-width: $min-page-width;
+  /*min-height: 850px;*/
+  margin:0;
+  padding:0;
 }
 
 .img-wrapper img {
@@ -105,7 +108,7 @@ body {
 
 .main-content-wrapper {
   width: $main-page-width;
-  margin: auto;
+ /* margin: auto;*/
 }
 
 .search-bar {
@@ -200,7 +203,7 @@ body {
   padding: 16px;
   /*width: 100%;*/
   width: $main-page-width;
-  min-width: 950px;
+  min-width: $min-page-width;
   left: 0;
   /*box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);*/
   z-index: 1;
@@ -633,7 +636,6 @@ footer {
     height: auto;
   }
 }
-
 
 
 @media only screen and (max-width: 950px) {

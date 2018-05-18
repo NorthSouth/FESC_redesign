@@ -80,12 +80,6 @@ $sliding-background-zindex:20;
 
 // base site
 
-
-body {
-  min-width: 950px;
-  min-height: 850px;
-}
-
 .img-wrapper img {
   height: 100px;
 }
@@ -290,33 +284,15 @@ row {
 
 
 // parallax effect
-/*.blank-bar {
-  position:fixed;
-  top:calc(#{$searchbar-height} + #{$navcontainer-height} + #{$heronav-height});
-  left:0;
-  width:100%;
-  z-index:$heronav-zindex;;
-  background-color:white;
-}*/
-
-/*body,
-html {
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-family: linkFont;
-}*/
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-}
-
-
-body {
   min-width: $min-page-width;
+  min-height: 850px;
 }
+
 
 .hero-nav {
   min-width: $min-page-width;
