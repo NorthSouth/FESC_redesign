@@ -188,7 +188,8 @@ slideshow-wrapper {
 }*/
 /*@import '_cardFlip-partial.scss';*/
 body {
-  min-width: 950px; }
+  min-width: 950px;
+  min-height: 850px; }
 
 .img-wrapper img {
   height: 100px; }

@@ -78,6 +78,13 @@ $sliding-background-zindex:20;
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 // base site
+
+
+body {
+  min-width: 950px;
+  min-height: 850px;
+}
+
 .img-wrapper img {
   height: 100px;
 }
@@ -361,6 +368,7 @@ body {
   width: 95%;
   /*margin: 0 auto;*/
   margin: 12.5rem auto 5rem auto;
+  padding:0 2rem;
   line-height: 1.625;
   color: $page-content-text-color;
   z-index: $page-content-zindex;
