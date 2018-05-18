@@ -499,7 +499,7 @@ body {
     line-height: 1.1rem;
   }
   .dropbtn,
-  dropbtn-active {
+  .dropbtn-active {
     font-size:calc(#{$navbar-font-size} - .35rem);
   }
 }
@@ -510,7 +510,7 @@ body {
     line-height: 1.2rem;
   }
   .dropbtn,
-  dropbtn-active {
+  .dropbtn-active {
     font-size:calc(#{$navbar-font-size} - .25rem);
   }
   .bottom-nav-title {
