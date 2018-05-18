@@ -1,8 +1,3 @@
-
-function refreshTopNav() {
-  $("#topNav").load(window.location.href + "#topNav");
-}
-
 function scrollToTop() {
   element.scrollIntoView(true); // Top
 }
