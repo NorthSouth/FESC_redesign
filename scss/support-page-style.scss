@@ -17,15 +17,24 @@ $drop-down-menu-padding:1rem;
 $menu-link-width:110px;
 $menu-link-padding:2rem;
 
+
+$dropdown-img-padding-top: 1.5rem;
+$dropdown-img-caption-padding-top: 0;
+$dropdown-caption-padding-top: .98rem;
 $navbar-padding-top: 2.75rem;
 /*$navbar-padding-bottom: calc(#{$navbar-padding-top} );*/
 
 $navbar-padding-bottom: .8rem;
-
 $dropdown-img-padding-top: 1.5rem;
+$dropdown-img-caption-padding-top: 0;
+$dropdown-caption-padding-top: .98rem;
 
 $navbar-font-size: 1.25rem;
 $overlay-font-size:5rem;
+$navbar-font-size: 1.25rem;
+$navbar-column-font-size: $navbar-font-size;
+$navbar-column-4-font-size:calc(#{$navbar-font-size} - .25rem);
+$fig-caption-font-size:.9rem;
 
 $searchbar-height: 2rem;
 $navcontainer-height:8rem;
@@ -62,6 +71,17 @@ $sliding-background-zindex:20;
 @mixin dropdown-img-animation-mixin {
   @extend %dropdown-animation;
   animation-name: dropdown-img-anim;
+}
+
+
+@mixin dropdown-img-caption-animation-mixin {
+  @extend %dropdown-animation;
+  animation-name: dropdown-img-anim-caption;
+}
+
+@mixin dropdown-caption-animation-mixin {
+  @extend %dropdown-animation;
+  animation-name: dropdown-anim-caption;
 }
 
 
@@ -380,8 +400,85 @@ body {
   background-color: white;
 }
 
+// 4-column layout for top nav
 
-// Animations
+.column-4 {
+  float: left;
+  width:22%;
+  padding: 10px;
+  background-color: $uf-menu-bg;
+  height: 250px;
+  h3 {
+    font-size:calc(#{$navbar-column-4-font-size} + .1rem)
+  }
+}
+
+
+.column-4 a {
+  float: none;
+  color: black;
+  color: $uf-blue;
+  padding: 16px;
+  font-size: $navbar-column-4-font-size;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  @include dropdown-animation-mixin;
+}
+
+.column-4 a:hover {
+  color: $uf-orange-lighter;
+  border-bottom: solid $separator-color 1px;
+}
+
+
+.column-4 p {
+  float: none;
+  color: black;
+  color: $uf-blue;
+  padding: 5px 16px;
+  font-size: $navbar-column-4-font-size;
+  text-decoration: none;
+  display: block;
+  text-align: left;  
+  @include dropdown-caption-animation-mixin 
+}
+
+.caption-title {
+  font-size: calc(#{$navbar-column-4-font-size} - .1rem);
+}
+
+// 'about' layout
+
+.dropdown-img-container-caption {
+  @include dropdown-img-caption-animation-mixin;
+  padding-top: .5rem;
+}
+
+.figcaption-text {
+  font-size:$fig-caption-font-size;
+}
+
+.dropdown-img-container-caption img {  
+  height: 200px; 
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caption-title {
+  font-size: calc(#{$navbar-column-4-font-size} - .1rem);
+}
+
+.dropdown-img-container-caption a {
+  text-align:center;
+}
+
+.dropdown-img-container-caption a:hover {
+  border-bottom:none;
+}
+// ANIMATIONS
+
 @keyframes dropdown-anim {
   from {
     padding: 0 16px 16px 16px;
@@ -404,6 +501,31 @@ body {
   }
 }
 
+
+@keyframes dropdown-img-anim-caption {
+  from {
+    /*padding: 0 0 0 0;*/
+    margin: -1rem 0 0 0;
+    opacity: .25;
+  }
+  to {
+    margin: $dropdown-img-caption-padding-top 0 0 0;
+    opacity: 1;
+  }
+}
+
+
+@keyframes dropdown-anim-caption {
+  from {
+    /*padding: 0 0 0 0;*/
+    margin: 0 0 0 0;
+    opacity: .25;
+  }
+  to {
+    margin: $dropdown-caption-padding-top 0 0 0;
+    opacity: 1;
+  }
+}
 @keyframes slide {
   0% {
     opacity: 0;

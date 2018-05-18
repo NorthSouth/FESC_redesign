@@ -1,6 +1,6 @@
 /*$navbar-padding-bottom: calc(2.75rem );*/
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
-.dropdown-img-container, .column a {
+.dropdown-img-container, .column a, .column-4 a, .column-4 p, .dropdown-img-container-caption {
   -webkit-animation-duration: .3s;
           animation-duration: .3s;
   -webkit-animation-timing-function: ease-out;
@@ -721,6 +721,69 @@ body {
 .dropbtn-active:hover {
   background-color: white; }
 
+.column-4 {
+  float: left;
+  width: 22%;
+  padding: 10px;
+  background-color: #fffdf5;
+  height: 250px; }
+  .column-4 h3 {
+    font-size: calc(calc(1.25rem - .25rem) + .1rem); }
+
+.column-4 a {
+  float: none;
+  color: black;
+  color: #00529b;
+  padding: 16px;
+  font-size: calc(1.25rem - .25rem);
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  -webkit-animation-name: dropdown-anim;
+          animation-name: dropdown-anim; }
+
+.column-4 a:hover {
+  color: #ff711f;
+  border-bottom: solid lightgray 1px; }
+
+.column-4 p {
+  float: none;
+  color: black;
+  color: #00529b;
+  padding: 5px 16px;
+  font-size: calc(1.25rem - .25rem);
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  -webkit-animation-name: dropdown-anim-caption;
+          animation-name: dropdown-anim-caption; }
+
+.caption-title {
+  font-size: calc(calc(1.25rem - .25rem) - .1rem); }
+
+.dropdown-img-container-caption {
+  -webkit-animation-name: dropdown-img-anim-caption;
+          animation-name: dropdown-img-anim-caption;
+  padding-top: .5rem; }
+
+.figcaption-text {
+  font-size: 0.9rem; }
+
+.dropdown-img-container-caption img {
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.caption-title {
+  font-size: calc(calc(1.25rem - .25rem) - .1rem); }
+
+.dropdown-img-container-caption a {
+  text-align: center; }
+
+.dropdown-img-container-caption a:hover {
+  border-bottom: none; }
+
 @-webkit-keyframes dropdown-anim {
   from {
     padding: 0 16px 16px 16px;
@@ -749,6 +812,38 @@ body {
     opacity: .25; }
   to {
     padding: 1.5rem 0 0 0;
+    opacity: 1; } }
+@-webkit-keyframes dropdown-img-anim-caption {
+  from {
+    /*padding: 0 0 0 0;*/
+    margin: -1rem 0 0 0;
+    opacity: .25; }
+  to {
+    margin: 0 0 0 0;
+    opacity: 1; } }
+@keyframes dropdown-img-anim-caption {
+  from {
+    /*padding: 0 0 0 0;*/
+    margin: -1rem 0 0 0;
+    opacity: .25; }
+  to {
+    margin: 0 0 0 0;
+    opacity: 1; } }
+@-webkit-keyframes dropdown-anim-caption {
+  from {
+    /*padding: 0 0 0 0;*/
+    margin: 0 0 0 0;
+    opacity: .25; }
+  to {
+    margin: 0.98rem 0 0 0;
+    opacity: 1; } }
+@keyframes dropdown-anim-caption {
+  from {
+    /*padding: 0 0 0 0;*/
+    margin: 0 0 0 0;
+    opacity: .25; }
+  to {
+    margin: 0.98rem 0 0 0;
     opacity: 1; } }
 @-webkit-keyframes slide {
   0% {
