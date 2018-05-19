@@ -1,0 +1,20 @@
+.chart-container {
+  width: 75%;
+  margin: auto; }
+
+.chart-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.chart-2 {
+  width: 50%; }
+
+/*# sourceMappingURL=chart-style.css.map */

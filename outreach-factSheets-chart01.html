@@ -3,14 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
-  <title class="pageTitle" id="education">Energy Education</title>
+  <title class="pageTitle" id="outreach">Energy Data</title>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
- <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">-->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">-->
 
 
   <link rel="stylesheet" href="css/support-page-style.css">
+  <link rel="stylesheet" href="css/chart-style.css">
+
+  <!-- google charts-->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="js/chart-01.js"></script>
 
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
@@ -28,7 +33,7 @@
         </a>
       </div>
       <div class="navbar">
-        <div class="dropbtn-active active-link">
+        <div class="dropdown dropbtn">
           education
           <div class="sliding-background">&nbsp;</div>
           <div class="dropdown-content">
@@ -40,7 +45,7 @@
               </div>
               <div class="column-4">
                 <h3>Educational Resources (1)</h3>
-                <a href="#">General Overview</a>
+                <a href="education-program-overview.html">General Overview</a>
                 <a href="#">Energy Education</a>
                 <a href="#">Workshops and Projects</a>
               </div>
@@ -48,7 +53,7 @@
                 <h3>Educational Resources (2)</h3>
                 <a href="#">Certificate Program</a>
                 <a href="#">Free Online Classes</a>
-                <a href="#">Demonstrations</a>
+                <a href="#">Resources and Demonstrations</a>
               </div>
               <div class="column-4">
                 <h3>Jobs and Training</h3>
@@ -59,30 +64,9 @@
             </div>
           </div>
         </div>
-        <div class="dropdown dropbtn">
+        <div class="dropbtn-active active-link">
           outreach
           <div class="sliding-background">&nbsp;</div>
-          <div class="dropdown-content">
-            <div class="row">
-              <div class="column">
-                <div class="dropdown-img-container">
-                  <img src="images/section/community-outreach-thumb.jpg" alt="Outreach thumbnail">
-                </div>
-              </div>
-              <div class="column">
-                <h3>Information</h3>
-                <a href="outreach-program-overview.html">Program Overview</a>
-                <a href="#">Fact Sheets</a>
-                <a href="#">Video Clips</a>
-              </div>
-              <div class="column">
-                <h3>Links</h3>
-                <a href="#">Calculators and other resources</a>
-                <a href="#">Research Areas</a>
-                <a href="#">News</a>
-              </div>
-            </div>
-          </div>
         </div>
         <div class="dropdown dropbtn">
           <!--<div class="dropbtn">about </div> -->
@@ -110,6 +94,7 @@
             </div>
           </div>
         </div>
+
         <div class="dropdown dropbtn">
           <!--<div class="dropbtn">about </div> -->
           contact
@@ -161,31 +146,24 @@
     <!--<div class="hero-nav" name="top" id="hero-nav">-->
     <div class="hero-nav" id="hero-nav">
       <div class="hero-nav-inner">
-        <h1>Education</h1>
+        <h1>Energy Data</h1>
       </div>
     </div>
     <div class="page-content" id="page-content">
-      <p>
-        Florida’s utilities have predicted that the State’s energy use will increase significantly in the coming years. Energy efficiency and renewable energy generation are vital to meeting this demand. FESC’s statewide education program will produce a workforce trained to meet Florida’s energy needs. Please explore the sub-menus below for Florida energy education opportunities sorted by discipline, institution, and degree program, along with training providers and other energy education-related resources.
-      </p>
-      <p>
-        FESC’s training and educational efforts are aimed at multiple levels of the career ladder: community college trained technicians, bachelors level students, graduate researchers, and practitioners who seek to update their existing skills. This statewide initiative is being distributed across partner institutions and capitalizes on each institution’s strengths to provide educational opportunities for both the conventional power generation industries and newly created energy related industries. New curricula in energy and coordinated programs across multiple universities is being developed to greatly expand the availability of energy education supporting existing and emerging energy industries in Florida. The program also includes components targeted to public and commercial sectors. For the commercial sector, the FESC Education Program is working closely with the Industrial Partners Program to ensure rapid dissemination of Center research results to this important constituent group.
-      </p>
-      <p>
-      The Education program has three focus areas, community college programming at the AS and certificate level, nuclear energy education, and a Masters degree in sustainable energy. FESC has also reached out to Florida’s youth through <a href="http://florida4h.org/projects/SAVE/4H%20Project%20Guide%20for%20SAVE.pdf" target="_blank">SAVE: Steps in Achieving Viable Energy</a>. Part of <a href="http://florida4h.org/youth_/" target="_blank">Florida 4-H Youth Development</a>, youths ages 11-13 learn what energy is, its different forms, how it is used, and how the world is impacted by energy use.
-      </p>
-      <p>
-        Florida’s <b>State</b> and <b>Community Colleges</b> offer an opportunity to develop a trained energy workforce through programming for two-year or four-year degrees.
-      </p>
-      <p>
-        FESC is working with the Florida Community College system as well as with the <a href="http://fl-ate.org/" target="_blank">Florida Advanced Technological Education Center (FLATE)</a>, a National Science Foundation (<a href="https://www.nsf.gov/" target="_blank">NSF</a>)-funded Regional Center that coordinates the design of industry-specific training programs for technicians. Complementary to FESC’s education goals, FLATE’s mission is to create a relevant statewide educational delivery system by supporting technical programs, curriculum development, best practices, student involvement, and outreach activities necessary to meet the workforce capacity and high performance skill needs of the manufacturing-related sectors within the state. Read a 2014 FLATE report on the <a href="http://floridaenergy.ufl.edu/wp-content/uploads/Sustainability-Staffing-at-Florida-Colleges_Article_FLATE.pdf" target="_blank">Evolution and Growth of Sustainability Careers at State and Community Colleges</a>.
-      </p>
-      <p>
-        At the University level, programming includes a curriculum directed at the nuclear industry workforce, which now operates five nuclear power plants (<a href="https://www.fpl.com/clean-energy/nuclear.html" target="_blank">FPL</a> and PEF). To meet the demand anticipated from retirement and expansion, FESC has made a significant investment in the UF training reactor. FESC is developing a program to promote careers in nuclear energy and is evaluating the potential development of a community college level course that will introduce students to nuclear engineering and prepare them for pursuing a degree in the field. FESC is also developing a new M.S. degree program in Sustainable Energy and Power Engineering that will be distance delivered to make it available to the broadest of audiences.
-      </p>
-      <p style="text-align:center;"><span><i>Please explore the sub-menus below for Florida energy education opportunities sorted by discipline, institution, and degree program, along with training providers and other energy education-related resources.</i></span></p>
 
-     
+      <div class="chart-container">
+        <div class="chart-row">
+          <div class="chart-2" id="line_chart_1" style="width: 900px; height: 500px"></div>
+          <div class="chart-2" id="line_chart_2" style="width: 900px; height: 500px"></div>
+        </div>
+        <div class="chart-row">
+          <div id="line_chart_3" style="width: 900px; height: 500px"></div>
+        </div>
+      </div>
+
+      <p style="text-align:center;"><span><i>Please use the links below to view Energy Awareness Fact Sheets, Energy Video Clips, and other important resources for Florida homeowners.</i></span></p>
+
+
       <div class="up-btn-wrapper">
         <a href="#" onclick="scrollToTop();"><i class="up-btn fas fa-angle-up"></i></a>
       </div>
@@ -193,12 +171,14 @@
 
   </div>
 
+  
+
   <footer>
     <div class="bottom-nav">
       <h3>
         <div class="botton-nav-title-wrapper">
           <div class="bottom-nav-title">
-            energy education
+            charts
           </div>
         </div>
         <div class="bottom-nav-header-wrapper slide-trigger-link">
@@ -213,34 +193,24 @@
       <div class="rich-area">
         <div class="rich-area-link-wrapper">
           <div class="rich-area-row">
-            <div class="rich-area-col-3">
+            <div class="rich-area-col">
               <h4>
-                Educational Resources (1)
+                Information
               </h4>
               <div class="sub-link-wrapper">
-               <!-- <a href="#" class="active-link-rich">Program Overview</a>-->
-                <a href="education-program-overview.html">General Overview</a>
-                <a href="#">Workshops and Projects</a>
+                <a href="outreach-program-overview.html" >Program Overview</a>
+               <!-- <a href="#">Fact Sheets</a>-->
+                <a href="#">Video Clips</a>
               </div>
             </div>
-            <div class="rich-area-col-3">
+            <div class="rich-area-col">
               <h4>
-                Educational Resources (2)
+                Links
               </h4>
               <div class="sub-link-wrapper">
-                <a href="#">Certificate Program</a>
-                <a href="#">Free Online Classes</a>
-                <a href="#">Demonstrations</a>
-              </div>
-            </div>
-            <div class="rich-area-col-3">
-              <h4>
-                Jobs and Training
-              </h4>
-              <div class="sub-link-wrapper">
-                <a href="#">Industry Careers</a>
-                <a href="#">Job Training</a>
-                <a href="#">Energy Extension Services</a>
+                <a href="#">Calculators and Other Resources</a>
+                <a href="#">Research Areas</a>
+                <a href="#">News</a>
               </div>
             </div>
         </div>
@@ -249,11 +219,12 @@
     </div>
   </footer>
 
+
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.8/popper.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
 
- <!-- <script src="js/json-text.js"></script>-->
+  <!-- <script src="js/json-text.js"></script>-->
   <script src="js/index-scroller.js"></script>
   <!--<script src="js/index2.js"></script>-->
   <script src="js/index3.js"></script>
