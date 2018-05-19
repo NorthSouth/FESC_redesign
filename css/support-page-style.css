@@ -406,12 +406,18 @@ footer {
   direction: row;
   wrap: nowrap;
   margin-bottom: 1rem;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .rich-area-col {
   z-index: 100;
   width: 39%; }
+  .rich-area-col:not(:first-child) {
+    padding-right: 2rem;
+    padding-left: 8rem;
+    /*border-right:solid white 1px;*/
+    border-left: solid white 1px; }
   .rich-area-col h4 {
     letter-spacing: .5px;
     font-size: 1.1rem;
@@ -429,6 +435,11 @@ footer {
 .rich-area-col-3 {
   z-index: 100;
   width: 25%; }
+  .rich-area-col-3:not(:first-child) {
+    padding-right: 1rem;
+    padding-left: 4rem;
+    /*border-right:solid white 1px;*/
+    border-left: solid white 1px; }
   .rich-area-col-3 h4 {
     letter-spacing: .5px;
     font-size: 1.1rem;
