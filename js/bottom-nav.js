@@ -1,9 +1,11 @@
 bottomNav = document.querySelector('.bottom-nav');
 richArea = document.querySelector('.rich-area');
 slideTrigger = document.querySelector('.slide-trigger');
+slideTriggerLink = document.querySelector('.slide-trigger-link');
 bottomNavHeader = document.querySelector('.bottom-nav-header');
 
 slideTrigger.addEventListener('click', slideUp);
+slideTriggerLink.addEventListener('click', slideUpLink);
 
 function slideUp() {
   slideTrigger.classList.toggle('active');
@@ -26,4 +28,9 @@ function slideUp() {
       richArea.style.opacity = '0'
     });
   }
+}
+
+
+function slideUpLink() {
+  slideUp();
 }
