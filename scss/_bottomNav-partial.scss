@@ -204,6 +204,21 @@ footer {
   }
 }
 
+.rich-area-col-3 {
+  z-index: 100;
+  width: 25%;
+  h4 {
+    letter-spacing:.5px;
+    font-size:1.1rem;
+    text-transform: uppercase;
+  }
+  .sub-link-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 
 .sub-link-wrapper a {
   float: none;

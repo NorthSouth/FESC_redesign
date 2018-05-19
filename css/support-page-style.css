@@ -426,6 +426,23 @@ footer {
         -ms-flex-pack: justify;
             justify-content: space-between; }
 
+.rich-area-col-3 {
+  z-index: 100;
+  width: 25%; }
+  .rich-area-col-3 h4 {
+    letter-spacing: .5px;
+    font-size: 1.1rem;
+    text-transform: uppercase; }
+  .rich-area-col-3 .sub-link-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
 .sub-link-wrapper a {
   float: none;
   color: #00529b;
