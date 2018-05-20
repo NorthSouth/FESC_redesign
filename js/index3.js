@@ -19,7 +19,7 @@ function assignBackgroundImage() {
   var pageTitle = document.getElementsByClassName("pageTitle")[0].id;
   /*document.getElementsByTagName("h1")[0].innerHTML=pageTitle; */
 
-  console.log("Page title:" + pageTitle);
+  /*console.log("Page title:" + pageTitle);*/
 
   // add modularity by detecting pageTitle attribute and assigning a background image to top of page
   switch(pageTitle) {
