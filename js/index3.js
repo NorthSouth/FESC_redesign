@@ -29,6 +29,9 @@ function assignBackgroundImage() {
     case "outreach":
       document.getElementsByClassName("hero-nav")[0].setAttribute("style", "background-image:url(images/section/community-outreach-banner.jpg);");
       break;
+    case "data":
+      document.getElementsByClassName("hero-nav")[0].setAttribute("style", "background-image:url(images/section/data-banner.jpg);");
+      break;
     case "education":
       document.getElementsByClassName("hero-nav")[0].setAttribute("style", "background-image:url(images/section/education-banner.jpg);");
       break;

@@ -2,7 +2,7 @@ var heroShrinker = function() {
     var hero = $('.hero-nav'),
         heroHeight = $('.hero-nav').outerHeight(true);
         $(hero).parent().css('padding-top', heroHeight);
-        /*newBackground = "url(http://wefunction.com/wordpress/wp-content/uploads/2015/04/free-photos-sites-vol2.jpg)";*/  
+        //temp background
         newBackground = "url(../images/img_fjords_wide)";
     $(window).scroll(function() {
         var scrollOffset = $(window).scrollTop();
@@ -19,4 +19,5 @@ var heroShrinker = function() {
         };
     });
 }
+
 heroShrinker();
