@@ -5,6 +5,8 @@ Class project case study: review and undertake partial redesign of public websit
   1. Added an example page to demonstrate the use off Google Charts.
   
      A line chart was selected since it intuitively conveys the data as a function of time.
+     
+     link to Google Charts page: https://developers.google.com/chart/interactive/docs/gallery/linechart
   2. The chart was added to outreach>fact sheets
   3. Completed work on building out the page templates for all 4 top-level nav categories (education, outreach, about and contact).
   
