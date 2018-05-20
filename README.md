@@ -1,6 +1,13 @@
 # HTML300-FESC_redesign
 Class project case study: review and undertake partial redesign of public website (FESC: http://floridaenergy.ufl.edu/) utilizing design best practices
 
+## WEEK 7
+  1. Added an example page to demonstrate the use off Google Charts.
+  
+     A line chart was selected since it intuitively conveys the data as a function of time.
+  2. The chart was added to outreach>fact sheets
+  3. Completed work on building out the page templates for all 4 top-level nav categories (education, outreach, about and contact).
+  
 ## WEEK 6
   1. Major build out of styling and coding for site.
   2. Implemented several new features including a slide show, parallax viewer and bottom nav on secondary page
