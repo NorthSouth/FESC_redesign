@@ -196,7 +196,15 @@ body {
   height: 100px; }
 
 .fesc-image-container {
+  position: absolute;
+  left: 0;
+  width: 15%;
   padding: 1rem 0 1rem 1rem; }
+
+.uf-image-container {
+  position: absolute;
+  width: 10%;
+  right: 0; }
 
 .nav-image-left {
   height: 100%; }
@@ -214,9 +222,8 @@ body {
   width: 100%; }
 
 .nav-container {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  /* justify-content: space-between;*/
+  position: relative;
   height: 8rem;
   vertical-align: middle;
   display: -webkit-box;
@@ -229,6 +236,8 @@ body {
 
 /*menu styling*/
 .navbar {
+  position: relative;
+  left: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,7 +246,7 @@ body {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
+  width: 75%;
   padding-top: 2.75rem;
   overflow: hidden;
   background-color: white;
