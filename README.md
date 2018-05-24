@@ -4,7 +4,7 @@ Class project case study: review and undertake partial redesign of public websit
 ## WEEK 7
   1. Added an example page to demonstrate the use off Google Charts.
   
-     A line chart was selected since it intuitively conveys the data as a function of time.
+     A line chart was selected since it intuitively conveys the data as a function of time. I also added a third chart with the two data sets plotted simultaneously in order to more clearly delineate the contribution of renewable energy.
      
      link to Google Charts page: https://developers.google.com/chart/interactive/docs/gallery/linechart
   2. The chart was added to outreach>fact sheets
