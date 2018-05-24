@@ -94,7 +94,16 @@ body {
 }
 
 .fesc-image-container {
+  position:absolute;
+  left:0;
+  width:15%;
   padding: 1rem 0 1rem 1rem;
+}
+
+.uf-image-container {  
+  position:absolute;
+  width:10%;
+  right:0;
 }
 
 .nav-image-left {
@@ -118,7 +127,8 @@ body {
 }
 
 .nav-container {
-  justify-content: space-between;
+ /* justify-content: space-between;*/
+  position:relative;
   height: 8rem;
   vertical-align: middle;
   display: flex;
@@ -128,11 +138,13 @@ body {
 /*menu styling*/
 
 .navbar {
+  position:relative;
+  left:15%;
   display: flex;
   font-weight: bold;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 100%;
+  width: 75%;
   padding-top: $navbar-padding-top;
   overflow: hidden;
   background-color: white;
