@@ -94,7 +94,14 @@ body {
 }
 
 .fesc-image-container {
+  position:absolute;
+  left:0;
   padding: 1rem 0 1rem 1rem;
+}
+
+.uf-image-container {  
+  position:absolute;
+  right:0;
 }
 
 .nav-image-left {
@@ -118,7 +125,7 @@ body {
 }
 
 .nav-container {
-  justify-content: space-between;
+ /* justify-content: space-between;*/
   height: 8rem;
   vertical-align: middle;
   display: flex;
