@@ -105,7 +105,14 @@ $sliding-background-zindex:20;
 }
 
 .fesc-image-container {
+  width:22rem;
   padding: 1rem 0 1rem 1rem;
+  text-align: left;
+}
+
+.uf-image-container {
+  width:10rem;
+  text-align: right;
 }
 
 .nav-image-left {
@@ -139,7 +146,7 @@ $sliding-background-zindex:20;
   left: 0;
   width: 100%;
   height: $navcontainer-height;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   vertical-align: middle;
   display: flex;
   flex-direction: row;
@@ -155,7 +162,7 @@ $sliding-background-zindex:20;
   font-weight: bold;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 100%;
+  width:110rem;
   padding-top: $navbar-padding-top;
   overflow: hidden;
   background-color: white;

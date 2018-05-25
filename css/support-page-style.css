@@ -481,7 +481,13 @@ footer {
   height: 100px; }
 
 .fesc-image-container {
-  padding: 1rem 0 1rem 1rem; }
+  width: 22rem;
+  padding: 1rem 0 1rem 1rem;
+  text-align: left; }
+
+.uf-image-container {
+  width: 10rem;
+  text-align: right; }
 
 .nav-image-left {
   height: 100%; }
@@ -510,9 +516,7 @@ footer {
   left: 0;
   width: 100%;
   height: 8rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  /*justify-content: space-between;*/
   vertical-align: middle;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -534,7 +538,7 @@ footer {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
+  width: 110rem;
   padding-top: 2.75rem;
   overflow: hidden;
   background-color: white;
