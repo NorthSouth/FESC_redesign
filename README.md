@@ -9,6 +9,7 @@ Class project case study: review and undertake partial redesign of public websit
      link to Google Charts page: https://developers.google.com/chart/interactive/docs/gallery/linechart
   2. The chart was added to outreach>fact sheets
   3. Completed work on building out the page templates for all 4 top-level nav categories (education, outreach, about and contact).
+  4. Updated/propogated the main head nav chantes to all active parts of the site; UF logo image link parallels style of UF site in header design.
   
 ## WEEK 6
   1. Major build out of styling and coding for site.
