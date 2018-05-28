@@ -148,9 +148,7 @@ var appAuxFooter = new Vue({
 
       let excludeName = [name];
       let slideTrigger = document.querySelector('.slide-trigger');
-      /*   let isActive = slideTrigger.classList.contains('active');*/
-
-      /* console.log("Clicked! adjust ", category, col, name);*/
+     
       switch (category) {
         case "Education":
           {
