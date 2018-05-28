@@ -1,6 +1,13 @@
 # HTML300-FESC_redesign
 Class project case study: review and undertake partial redesign of public website (FESC: http://floridaenergy.ufl.edu/) utilizing design best practices
 
+## WEEK 8
+  1. Re-built pages to make use of the Vue framework
+  2. Modifications include:
+     - Header nav on index page
+     - Header nav on secondary pages (with active page category suppression in drop-down menu)
+     - Footer nav on secondary pages (display nav title; use common source, but suppress current page link in list based on main page category)
+  
 ## WEEK 7
   1. Added an example page to demonstrate the use off Google Charts.
   
