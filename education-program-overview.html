@@ -25,9 +25,49 @@
     <div class="nav-container">
       <app-index-fesc-image></app-index-fesc-image>
       <div class="navbar">
-        <app-aux-navbar-active-education></app-aux-navbar-active-education>
-        <app-index-navbar-dropdown-outreach></app-index-navbar-dropdown-outreach>
-        <app-index-navbar-dropdown-about></app-index-navbar-dropdown-about>
+        <app-aux-navbar-active-education></app-aux-navbar-active-education>        
+        <div id="outreachDD" class="dropdown dropbtn">
+          outreach
+          <div class="sliding-background">&nbsp;</div>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <div class="dropdown-img-container">
+                  <img v-for="nav in orNav" v-bind:src="srcI(nav)" v-bind:alt="altI(nav)">
+                </div>
+              </div>
+              <div class="column">
+                <h3>Information</h3>
+                  <a v-for="link in orLinks1" v-bind:href="url(link)">{{ link.name }}</a>
+              </div>
+              <div class="column">
+                <h3>Links</h3>
+                  <a v-for="link in orLinks2" v-bind:href="url(link)">{{ link.name }}</a>
+              </div>
+            </div>
+          </div>
+        </div>          
+        <div id="aboutDD" class="dropdown dropbtn">
+          about
+          <div class="sliding-background">&nbsp;</div>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <div class="dropdown-img-container">
+                  <img v-for="nav in abtNav" v-bind:src="srcI(nav)" v-bind:alt="altI(nav)">
+                </div>
+              </div>
+              <div class="column">
+                <h3>General</h3>
+                  <a v-for="link in abtLinks1" v-bind:href="url(link)">{{ link.name }}</a>
+              </div>
+              <div class="column">
+                <h3>Organization</h3>
+                  <a v-for="link in abtLinks2" v-bind:href="url(link)">{{ link.name }}</a>
+              </div>
+            </div>
+          </div>
+        </div>          
         <app-index-navbar-dropdown-contact></app-index-navbar-dropdown-contact>
       </div>
  
@@ -114,6 +154,7 @@
         </div>
       </div>
       </div>
+    
     </footer>
   </div>
     

@@ -29,16 +29,81 @@
       <div class="nav-container">
         <app-index-fesc-image></app-index-fesc-image>
 
-        <div class="navbar">
-          <app-index-navbar-dropdown-education></app-index-navbar-dropdown-education>
-          <app-index-navbar-dropdown-outreach></app-index-navbar-dropdown-outreach>
-          <app-index-navbar-dropdown-about></app-index-navbar-dropdown-about>
-          <app-index-navbar-dropdown-contact></app-index-navbar-dropdown-contact>
+        <div class="navbar">          
+        <div id="educationDD" class="dropdown dropbtn">
+          education
+          <div class="sliding-background">&nbsp;</div>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column-4">
+                <div class="dropdown-img-container">
+                  <img v-for="nav in edNav" v-bind:src="srcI(nav)" v-bind:alt="altI(nav)">
+                </div>
+              </div>
+              <div class="column-4">
+                <h3>Educational Resources (1)</h3>
+                <a v-for="link in edLinks1" v-bind:href="url(link)">{{ link.name }}</a>
+              </div>
+              <div class="column-4">
+                <h3>Educational Resources (2)</h3>
+                  <a v-for="link in edLinks2" v-bind:href="url(link)">{{link.name}}</a>
+              </div>
+              <div class="column-4">
+                <h3>Jobs and Training</h3>
+                  <a v-for="link in edLinks3" v-bind:href="url(link)">{{ link.name }}</a>
+              </div>
+            </div>
+          </div>
+        </div>          
+        <div id="outreachDD" class="dropdown dropbtn">
+          outreach
+          <div class="sliding-background">&nbsp;</div>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <div class="dropdown-img-container">
+                  <img v-for="nav in orNav" v-bind:src="srcI(nav)" v-bind:alt="altI(nav)">
+                </div>
+              </div>
+              <div class="column">
+                <h3>Information</h3>
+                  <a v-for="link in orLinks1" v-bind:href="url(link)">{{ link.name }}</a>
+              </div>
+              <div class="column">
+                <h3>Links</h3>
+                  <a v-for="link in orLinks2" v-bind:href="url(link)">{{ link.name }}</a>
+              </div>
+            </div>
+          </div>
+        </div>          
+        <div id="aboutDD" class="dropdown dropbtn">
+          about
+          <div class="sliding-background">&nbsp;</div>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <div class="dropdown-img-container">
+                  <img v-for="nav in abtNav" v-bind:src="srcI(nav)" v-bind:alt="altI(nav)">
+                </div>
+              </div>
+              <div class="column">
+                <h3>General</h3>
+                  <a v-for="link in abtLinks1" v-bind:href="url(link)">{{ link.name }}</a>
+              </div>
+              <div class="column">
+                <h3>Organization</h3>
+                  <a v-for="link in abtLinks2" v-bind:href="url(link)">{{ link.name }}</a>
+              </div>
+            </div>
+          </div>
+        </div>          
+        <app-index-navbar-dropdown-contact></app-index-navbar-dropdown-contact>
         </div>
 
         <app-index-uf-logo></app-index-uf-logo>
         
       </div>
+        
       <section class="hero-image-wrapper" id="hero-image-wrapper">
         <img src="images/windTurbines.jpg" alt="Wind Turbines">
         <div class="hero-image-text" id="hero-image-text">

@@ -1,3 +1,148 @@
+// Bottom Nav Links
+
+var educationLinks1 = [
+  {
+    name: 'Program Overview',
+    url: 'education-program-overview.html',
+    col: 1
+  },
+  {
+    name: 'Energy Education',
+    url: '#',
+    col: 1
+  },
+  {
+    name: 'Workshops and Projects',
+    url: '#',
+    col: 1
+  }
+]
+var educationLinks2 = [
+  {
+    name: 'Certificate Programs',
+    url: '#',
+    col: 2
+  },
+  {
+    name: 'Free Online Classes',
+    url: '#',
+    col: 2
+  },
+  {
+    name: 'Demonstrations',
+    url: '#',
+    col: 2
+  }
+]
+var educationLinks3 = [
+  {
+    name: 'Industry Careers',
+    url: '#',
+    col: 3
+  },
+  {
+    name: 'Job Training',
+    url: '#',
+    col: 3
+  },
+  {
+    name: 'Energy Extension Services',
+    url: '#',
+    col: 3
+  }
+]
+
+var outreachLinks1 = [
+  {
+    name: 'Program Overview',
+    url: 'outreach-program-overview.html',
+    col: 1
+  },
+  {
+    name: 'Fact Sheets',
+    url: 'outreach-factSheets-chart01.html',
+    col: 1
+  },
+  {
+    name: 'Video Clips',
+    url: '#',
+    col: 1
+  }
+]
+var outreachLinks2 = [
+  {
+    name: 'Calculators and other Resources',
+    url: '#',
+    col: 2
+  },
+  {
+    name: 'Research Areas',
+    url: '#',
+    col: 2
+  },
+  {
+    name: 'News',
+    url: '#',
+    col: 2
+  }
+]
+
+var aboutLinks1 = [
+  {
+    name: 'Program Overview',
+    url: 'about-program-overview.html',
+    col: 2
+  },
+  {
+    name: 'Faculty',
+    url: '#',
+    col: 2
+  },
+  {
+    name: 'Visit Us',
+    url: '#',
+    col: 2
+  }
+]
+var aboutLinks2 = [
+  {
+    name: 'Leadership Team',
+    url: '#',
+    col: 2
+  },
+  {
+    name: 'University Leads',
+    url: '#',
+    col: 2
+  },
+  {
+    name: 'Oversight and Advisory Boards',
+    url: '#',
+    col: 2
+  }
+]
+
+var educationNav = [
+  {
+    imgSrc: "images/section/academics.jpg",
+    imgAlt: "Academics thumbnail"
+  }
+]
+
+var outreachNav = [
+  {
+    imgSrc: "images/section/community-outreach-thumb.jpg",
+    imgAlt: "Outreach thumbnail"
+  }
+]
+
+var aboutNav = [
+  {
+    imgSrc: "images/section/about.jpg",
+    imgAlt: "About thumbnail"
+  }
+]
+
 // TOP NAV
 
 Vue.component('app-index-search-bar',{
@@ -17,15 +162,17 @@ Vue.component('app-index-navbar-dropdown-education',{
 })
 
 Vue.component('app-aux-navbar-active-education',{
-  template:'<div class="dropbtn-active active-link">education<div class="sliding-background">&nbsp;</div><div class="dropdown-content"><div class="row"><div class="column-4"><div class="dropdown-img-container"><img src="images/section/academics.jpg" alt="academics thumbnail"></div></div><div class="column-4"><h3>Educational Resources (1)</h3><a href="education-program-overview.html">General Overview</a><a href="#">Energy Education</a><a href="#">Workshops and Projects</a></div><div class="column-4"><h3>Educational Resources (2)</h3><a href="#">Certificate Program</a><a href="#">Free Online Classes</a><a href="#">Resources and Demonstrations</a></div><div class="column-4"><h3>Jobs and Training</h3><a href="#">Industry Careers</a><a href="#">Job Training</a><a href="#">Energy Extension Service</a></div></div></div></div>'
+  template:'<div class="dropbtn-active active-link">education</div>'
 })
+
 
 Vue.component('app-index-navbar-dropdown-outreach',{
   template:'<div class="dropdown dropbtn">outreach<div class="sliding-background">&nbsp;</div><div class="dropdown-content"><div class="row"><div class="column"><div class="dropdown-img-container">           <img src="images/section/community-outreach-thumb.jpg" alt="Outreach thumbnail"></div></div><div class="column"><h3>Information</h3><a href="outreach-program-overview.html">Program Overview</a><a href="outreach-factSheets-chart01.html">Fact Sheets</a><a href="#">Video Clips</a></div><div class="column">   <h3>Links</h3><a href="#">Calculators and other resources</a><a href="#">Research Areas</a><a href="#">News</a></div></div></div></div>'
 })
 
+
 Vue.component('app-aux-navbar-active-outreach',{
-  template:'<div class="dropbtn-active active-link">outreach<div class="sliding-background">&nbsp;</div><div class="dropdown-content"><div class="row"><div class="column"><div class="dropdown-img-container">           <img src="images/section/community-outreach-thumb.jpg" alt="Outreach thumbnail"></div></div><div class="column"><h3>Information</h3><a href="outreach-program-overview.html">Program Overview</a><a href="outreach-factSheets-chart01.html">Fact Sheets</a><a href="#">Video Clips</a></div><div class="column">   <h3>Links</h3><a href="#">Calculators and other resources</a><a href="#">Research Areas</a><a href="#">News</a></div></div></div></div>'
+  template:'<div class="dropbtn-active active-link">outreach</div>'
 })
 
 Vue.component('app-index-navbar-dropdown-about',{
@@ -33,7 +180,7 @@ Vue.component('app-index-navbar-dropdown-about',{
 })
 
 Vue.component('app-aux-navbar-active-about',{
-  template:'<div class="dropbtn-active active-link">about<div class="sliding-background">&nbsp;</div><div class="dropdown-content"><div class="row"><div class="column"><div class="dropdown-img-container"><img src="images/section/about.jpg" alt="about thumbnail"></div></div><div class="column"><h3>General</h3><a href="about-program-overview.html">Program Overview</a><a href="#">Faculty</a><a href="#">Visit Us</a></div><div class="column"><h3>Organization</h3><a href="#">Leadership Team</a><a href="#">University Leads</a><a href="#">Oversight and Advisory Boards</a></div></div></div></div>'
+  template:'<div class="dropbtn-active active-link">about</div>'
 })
 
 Vue.component('app-index-navbar-dropdown-contact',{
