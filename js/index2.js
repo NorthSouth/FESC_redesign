@@ -1,24 +1,15 @@
-/*document.getElementById("demo").addEventListener("mouseover", mouseOver);
-document.getElementById("demo").addEventListener("mouseout", mouseOut);*/
+
 
 function mouseOver() {
-    /*document.getElementById("demo").style.color = "red";*/
-  console.log("eek! a mouse", this);
+  /*console.log("eek! a mouse", this);*/
 }
 
 function mouseOut() {
     document.getElementById("demo").style.color = "black";
 }
 
-/*var idLinkList = document.querySelectorAll('*[id]');*/
+
 var ids = document.querySelectorAll('[id]');
-
-/*
-Array.prototype.forEach.call( ids, function( el, i ) {
-    // "el" is your element
-    console.log( el.id ); // log the ID
-});*/
-
 
 function refreshTopNav() {
   location.reload(forceGet);
@@ -40,18 +31,6 @@ function onClickOverlay(){
   document.getElementById("hero-image-overlay").classList.remove("hero-image-button-clicked");
   document.getElementById("hero-image-text").style.display="block";
 }
-
-/*var arr = Array.prototype.map.call( ids, function( el, i ) {
-    return el.id;
-});
-
-arr.forEach(function(element) {
-  idTest=element.includes("link-container-");
-  if (idTest) {
-    console.log("Found one! ",element);
-    document.getElementById(element).addEventListener("mouseover", mouseOver);
-  }
-});*/
 
 // slide show functions
 
@@ -116,9 +95,6 @@ function getViewport() {
  if (typeof window.innerWidth != 'undefined') {
    viewPortWidth = window.innerWidth,
    viewPortHeight = window.innerHeight
-  /* console.log("viewport width: ",viewPortWidth);
-   console.log("viewport height: ",viewPortHeight);
-   console.log("-----------");*/
  }
   
 }
@@ -140,13 +116,6 @@ for (i=0; i<imgBtnNodeList.length; i++){
 
 var imgOverlayNodeList= document.getElementsByClassName("image-overlay-info");
 
-// commented out for testing slide show
-/*
-for (i=0; i<imgOverlayNodeList.length; i++){
-  imgOverlayNodeList[i].addEventListener("click", onClickOverlay);
-}
-*/
-
 
 var imgOverlayNodeList= document.getElementsByClassName("hero-image-overlay");
 
@@ -157,4 +126,3 @@ for (i=0; i<imgOverlayNodeList.length; i++){
 //will be youtube player references once API is loaded
 var players = [];
 
-/*getViewport();*/

@@ -8,10 +8,6 @@ footer {
   width: $main-page-width;
 }
 
-/*
-.support-bottom-nav-container {
-  height:3rem;   
-}*/
 
 .row-bottom-nav {
   position: relative;
@@ -29,10 +25,8 @@ footer {
   justify-content:center;
   flex-direction:column;
   font-family: linkFont;
-  /* opacity:.8;*/
   background-color: $uf-orange;
   width: 12%;
-/*  text-align: center;*/
   border-right: solid white 2px;
 
 }
@@ -60,15 +54,12 @@ footer {
   background-color: $uf-orange-lighter;
   width: 78%;
   text-align: center;
-  /*opacity:.5;*/
 }
 
 .bottom-nav-links {
   text-transform: uppercase;
   color: white;
   font-family: linkFont;
-  /*opacity:.5;*/
-  /*background-color:$uf-orange-lighter;*/
   padding: 1rem 1rem;
   width: 3rem;
 }
@@ -97,16 +88,12 @@ footer {
   text-transform: uppercase;
   color: white;
   font-family: linkFont;
-  /*opacity:.5;*/
-  /*background-color:$uf-orange-lighter;*/
-  /*padding: 1.5rem;*/
   padding-top: 1.5rem;
   width: 3rem;
 }
 
 // NAV CODE
 .bottom-nav {
-  /*transition: height 300ms cubic-bezier(0.4, 0.0, 0.2, 1);*/
   height: 48px;
   overflow: hidden;
   width: 100%;
@@ -133,8 +120,6 @@ footer {
     width: 1px;
     height: 1px;
     user-select: none;
-    /*transition: transform 350ms;*/
-    /*transition: transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1);*/
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -147,12 +132,8 @@ footer {
     height: calc(100% - 48px);
     display: flex;
     justify-content: space-around;
-    /*align-items: center;*/
     color: white;
-    /*user-select: none;*/
-    /*pointer-events: none;*/
     min-width: $min-page-width;
-    /*padding-bottom:1rem;*/
     z-index: $bottom-nav-z-index;
   }
   &::before {
@@ -166,12 +147,9 @@ footer {
 
 // NAV LINK SUB MENU
 .rich-area-link-wrapper {
-  /*position:relative;*/
   width: 80%;
-  /* left:0%;*/
   padding-left: 0;
   padding-top: 0;
- /* padding-bottom: .5rem;*/
   transform: translate(-2rem, 0);
 }
 
@@ -195,7 +173,6 @@ footer {
   &:not(:first-child) {
     padding-right:2rem;
     padding-left:8rem;
-    /*border-right:solid white 1px;*/
     border-left:solid white 1px;
   }
   h4 {
@@ -216,7 +193,6 @@ footer {
   &:not(:first-child) {
     padding-right:1rem;
     padding-left:4rem;
-    /*border-right:solid white 1px;*/
     border-left:solid white 1px;
   }
   h4 {
@@ -242,7 +218,6 @@ footer {
   display: block;
   text-align: left;
   cursor: pointer;  
-  /*@include dropdown-animation-mixin;*/
 }
 
 .sub-link-wrapper a:hover {

@@ -61,12 +61,6 @@ img {
 
 /* Caption/Slide text */
 .text {
-  /*  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;*/
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #f2f2f2;
@@ -181,14 +175,9 @@ img {
     opacity: 0.4; }
   to {
     opacity: 1; } }
-/* On smaller screens, decrease text size */
-/*@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}*/
 /*@import '_cardFlip-partial.scss';*/
 body {
   min-width: 950px;
-  /*min-height: 850px;*/
   margin: 0;
   padding: 0; }
 
@@ -211,21 +200,13 @@ body {
   height: 100%; }
 
 .main-content-wrapper {
-  width: 100%;
-  /* margin: auto;*/ }
+  width: 100%; }
 
 .search-bar {
   background-color: #b84300;
   height: 2rem;
   width: 100%; }
 
-/*.nav-container {
-  width:100%;
-  height: 8rem;
-  vertical-align: middle;
-  display: flex;
-  flex-direction: row;
-}*/
 .nav-container {
   min-width: 950px;
   /*position: fixed;*/
@@ -246,19 +227,6 @@ body {
   background-color: white; }
 
 /*menu styling*/
-/*
-.navbar {
-  display: flex;
-  font-weight: bold;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width:110rem;
-  padding-top: $navbar-padding-top;
-  overflow: hidden;
-  background-color: white;
-  font-family: linkFont, Arial, sans-serif;
-  text-transform: uppercase;
-}*/
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -276,7 +244,6 @@ body {
   text-transform: uppercase; }
 
 .navbar a {
-  /*font-size: 16px;*/
   font-size: 1.25rem;
   color: white;
   color: #00529b;
@@ -324,15 +291,12 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  /*margin-top:5.5rem;*/
   background-color: #f9f9f9;
   background-color: #fffdf5;
   padding: 16px;
-  /*width: 100%;*/
   width: 100%;
   min-width: 950px;
   left: 0;
-  /*box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);*/
   z-index: 1;
   z-index: 10; }
 
@@ -447,7 +411,6 @@ row {
 .hero-image-wrapper {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  /*transform: translate(0, -3rem);*/
   position: relative;
   text-align: center;
   width: 100%; }
@@ -537,7 +500,6 @@ row {
 
 footer {
   position: relative;
-  /*top: -3.5rem;*/
   padding: 1rem 2rem 2rem 2rem; }
 
 .footer-fesc-logo {
@@ -687,7 +649,6 @@ footer {
     opacity: 1; } }
 @-webkit-keyframes dropdown-img-anim-caption {
   from {
-    /*padding: 0 0 0 0;*/
     margin: -1rem 0 0 0;
     opacity: .25; }
   to {
@@ -695,7 +656,6 @@ footer {
     opacity: 1; } }
 @keyframes dropdown-img-anim-caption {
   from {
-    /*padding: 0 0 0 0;*/
     margin: -1rem 0 0 0;
     opacity: .25; }
   to {
@@ -703,7 +663,6 @@ footer {
     opacity: 1; } }
 @-webkit-keyframes dropdown-anim-caption {
   from {
-    /*padding: 0 0 0 0;*/
     margin: 0 0 0 0;
     opacity: .25; }
   to {
@@ -711,7 +670,6 @@ footer {
     opacity: 1; } }
 @keyframes dropdown-anim-caption {
   from {
-    /*padding: 0 0 0 0;*/
     margin: 0 0 0 0;
     opacity: .25; }
   to {

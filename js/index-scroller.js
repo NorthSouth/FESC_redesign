@@ -7,15 +7,12 @@ var heroShrinker = function() {
     $(window).scroll(function() {
         var scrollOffset = $(window).scrollTop();
         if (scrollOffset < heroHeight) {
-            $(hero).css('height', (heroHeight - scrollOffset));          
-           /*$('h1').text('About');*/
+            $(hero).css('height', (heroHeight - scrollOffset));  
         }
         if (scrollOffset > (heroHeight - 215)) {
             hero.addClass('fixme');
-            /*hero.css("background-image", newBackground);*/  
         } else {
-            hero.removeClass('fixme');                  
-           /*$('h1').text('About');*/
+            hero.removeClass('fixme');    
         };
     });
 }

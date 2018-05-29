@@ -17,9 +17,6 @@ function toggleToTopButton() {
 
 function assignBackgroundImage() {
   var pageTitle = document.getElementsByClassName("pageTitle")[0].id;
-  /*document.getElementsByTagName("h1")[0].innerHTML=pageTitle; */
-
-  /*console.log("Page title:" + pageTitle);*/
 
   // add modularity by detecting pageTitle attribute and assigning a background image to top of page
   switch(pageTitle) {
@@ -39,7 +36,6 @@ function assignBackgroundImage() {
 
 }
 
-/*var element = document.getElementById("main-content-wrapper");*/
 var element = document.getElementById("hero-nav");
 
 assignBackgroundImage();
