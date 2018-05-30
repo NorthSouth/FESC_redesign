@@ -123,10 +123,10 @@
           <div v-on:click="linkSort('Education',1,'Program Overview')" class="bottom-nav-toggle-btn-wrapper slide-trigger "><i class="material-icons up-btn fas fa-angle-up"></i></div>
         </h3>
             
-        <div class="rich-area">
-          <div class="rich-area-link-wrapper">
-            <div class="rich-area-row">
-              <div class="rich-area-col-3">
+        <div class="menu-area"> 
+          <div class="menu-area-link-wrapper">
+            <div class="menu-area-row">
+              <div class="menu-area-col-3">
                 <h4>
                   Educational Resources (1)
                 </h4>
@@ -134,7 +134,7 @@
                   <a v-for="link in edLinks1" v-bind:href="url(link)">{{ link.name }}</a>
                 </div>
               </div>
-              <div class="rich-area-col-3">
+              <div class="menu-area-col-3">
                 <h4>
                   Educational Resources (2)
                 </h4>     
@@ -142,7 +142,7 @@
                   <a v-for="link in edLinks2" v-bind:href="url(link)">{{link.name}}</a>
                 </div>
               </div>
-              <div class="rich-area-col-3">
+              <div class="menu-area-col-3">
                 <h4>
                   Jobs and Training
                 </h4>   

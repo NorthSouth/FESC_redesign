@@ -330,7 +330,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .bottom-nav .rich-area {
+  .bottom-nav .menu-area {
     position: relative;
     opacity: 0;
     background-color: #424242;
@@ -354,7 +354,7 @@ footer {
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1); }
 
-.rich-area-link-wrapper {
+.menu-area-link-wrapper {
   width: 80%;
   padding-left: 0;
   padding-top: 0;
@@ -367,7 +367,7 @@ footer {
   -webkit-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1); }
 
-.rich-area-row {
+.menu-area-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -378,18 +378,18 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.rich-area-col {
+.menu-area-col {
   z-index: 100;
   width: 39%; }
-  .rich-area-col:not(:first-child) {
+  .menu-area-col:not(:first-child) {
     padding-right: 2rem;
     padding-left: 8rem;
     border-left: solid white 1px; }
-  .rich-area-col h4 {
+  .menu-area-col h4 {
     letter-spacing: .5px;
     font-size: 1.1rem;
     text-transform: uppercase; }
-  .rich-area-col .sub-link-wrapper {
+  .menu-area-col .sub-link-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -399,18 +399,18 @@ footer {
         -ms-flex-pack: justify;
             justify-content: space-between; }
 
-.rich-area-col-3 {
+.menu-area-col-3 {
   z-index: 100;
   width: 25%; }
-  .rich-area-col-3:not(:first-child) {
+  .menu-area-col-3:not(:first-child) {
     padding-right: 1rem;
     padding-left: 4rem;
     border-left: solid white 1px; }
-  .rich-area-col-3 h4 {
+  .menu-area-col-3 h4 {
     letter-spacing: .5px;
     font-size: 1.1rem;
     text-transform: uppercase; }
-  .rich-area-col-3 .sub-link-wrapper {
+  .menu-area-col-3 .sub-link-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -434,12 +434,12 @@ footer {
 .sub-link-wrapper a:hover {
   border-bottom: solid white 2px; }
 
-.sub-link-wrapper .active-link-rich {
+.sub-link-wrapper .active-link-menu {
   color: lightgray;
   font-weight: 800;
   text-transform: uppercase;
   cursor: default; }
-  .sub-link-wrapper .active-link-rich:hover {
+  .sub-link-wrapper .active-link-menu:hover {
     border-bottom: none; }
 
 .img-wrapper img {
