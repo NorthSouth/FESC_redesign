@@ -30,7 +30,6 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-  /*max-width: 1000px;*/
   position: relative;
   margin: auto; }
 
@@ -76,7 +75,6 @@ img {
   line-height: 1.5rem;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  /*padding: 8px 12px;*/
   padding: 2rem 4rem; }
 
 /* video caption text */

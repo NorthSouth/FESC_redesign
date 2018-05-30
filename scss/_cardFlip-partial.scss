@@ -1,9 +1,7 @@
 .card-container {
   cursor: pointer;
-  /*height: 150px;*/
   perspective: 600;
   position: relative;
- /* width: 150px;*/
 }
 .card {
   height: 100%;
@@ -29,7 +27,6 @@
   /*background: #eaeaed;*/
   background-color: $uf-menu-bg;
   color: $uf-blue;
-  /*line-height: 150px;*/
   text-align: center;
   transform: rotateY(180deg);
   height:75%;
@@ -47,6 +44,5 @@
 }
 
 .card-position {
-  /*font-size:calc(#{$fig-caption-font-size} - .1rem );*/
   font-size:calc(#{$fig-caption-font-size} + .1rem);
 }

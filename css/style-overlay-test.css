@@ -176,6 +176,7 @@ img {
 /*@import '_cardFlip-partial.scss';*/
 body {
   min-width: 950px;
+  /*min-height: 850px;*/
   margin: 0;
   padding: 0; }
 
@@ -183,13 +184,7 @@ body {
   height: 100px; }
 
 .fesc-image-container {
-  width: 22rem;
-  padding: 1rem 0 1rem 1rem;
-  text-align: left; }
-
-.uf-image-container {
-  width: 8rem;
-  text-align: right; }
+  padding: 1rem 0 1rem 1rem; }
 
 .nav-image-left {
   height: 100%; }
@@ -198,7 +193,8 @@ body {
   height: 100%; }
 
 .main-content-wrapper {
-  width: 100%; }
+  width: 100%;
+  /* margin: auto;*/ }
 
 .search-bar {
   background-color: #b84300;
@@ -206,13 +202,10 @@ body {
   width: 100%; }
 
 .nav-container {
-  min-width: 950px;
-  /*position: fixed;*/
-  top: 2rem;
-  left: 0;
-  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 8rem;
-  /*justify-content: space-between;*/
   vertical-align: middle;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,9 +213,7 @@ body {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row;
-  z-index: 4;
-  background-color: white; }
+          flex-direction: row; }
 
 /*menu styling*/
 .navbar {
@@ -234,7 +225,7 @@ body {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 110rem;
+  width: 100%;
   padding-top: 2.75rem;
   overflow: hidden;
   background-color: white;
@@ -282,7 +273,7 @@ body {
     background-color: #fffdf5; }
 
 .navbar a:hover,
-.dropdown:hover .dropbtn:hover {
+.dropdown:hover .dropbtn {
   background-color: #fffdf5;
   cursor: pointer; }
 
@@ -498,6 +489,7 @@ row {
 
 footer {
   position: relative;
+  /*top: -3.5rem;*/
   padding: 1rem 2rem 2rem 2rem; }
 
 .footer-fesc-logo {
@@ -744,4 +736,4 @@ footer {
   .text {
     font-size: .9rem; } }
 
-/*# sourceMappingURL=main-page-style.css.map */
+/*# sourceMappingURL=style-overlay-test.css.map */
