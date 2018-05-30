@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title class="pageTitle" id="about">About Us</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">-->
+  <!-- development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <link rel="stylesheet" href="css/support-page-style-search.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body onresize="toggleToTopButton();">
+  <div class="main-content-wrapper" id="main-content-wrapper">
+    <div id="app-aux">
+
+      <!-- <app-index-search-bar></app-index-search-bar>-->
+      <div class="search-bar">
+        <div class="search-container">
+          <gcse:search></gcse:search>
+        </div>
+      </div>
+
+      <div class="nav-container">
+        <app-index-fesc-image></app-index-fesc-image>
+        <div class="navbar">
+          <div id="educationDD" class="dropdown dropbtn">
+            education
+            <div class="sliding-background">&nbsp;</div>
+            <div class="dropdown-content">
+              <div class="row">
+                <div class="column-4">
+                  <div class="dropdown-img-container">
+                    <img v-for="nav in edNav" v-bind:src="srcI(nav)" v-bind:alt="altI(nav)">
+                  </div>
+                </div>
+                <div class="column-4">
+                  <h3>Educational Resources (1)</h3>
+                  <a v-for="link in edLinks1" v-bind:href="url(link)">{{ link.name }}</a>
+                </div>
+                <div class="column-4">
+                  <h3>Educational Resources (2)</h3>
+                  <a v-for="link in edLinks2" v-bind:href="url(link)">{{link.name}}</a>
+                </div>
+                <div class="column-4">
+                  <h3>Jobs and Training</h3>
+                  <a v-for="link in edLinks3" v-bind:href="url(link)">{{ link.name }}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="outreachDD" class="dropdown dropbtn">
+            outreach
+            <div class="sliding-background">&nbsp;</div>
+            <div class="dropdown-content">
+              <div class="row">
+                <div class="column">
+                  <div class="dropdown-img-container">
+                    <img v-for="nav in orNav" v-bind:src="srcI(nav)" v-bind:alt="altI(nav)">
+                  </div>
+                </div>
+                <div class="column">
+                  <h3>Information</h3>
+                  <a v-for="link in orLinks1" v-bind:href="url(link)">{{ link.name }}</a>
+                </div>
+                <div class="column">
+                  <h3>Links</h3>
+                  <a v-for="link in orLinks2" v-bind:href="url(link)">{{ link.name }}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <app-aux-navbar-active-about></app-aux-navbar-active-about>
+          <app-index-navbar-dropdown-contact></app-index-navbar-dropdown-contact>
+        </div>
+
+        <app-index-uf-logo></app-index-uf-logo>
+
+      </div>
+
+      <div class="hero-nav" id="hero-nav">
+        <div class="hero-nav-inner">
+          <h1>About Us</h1>
+        </div>
+      </div>
+      <div class="page-content" id="page-content">
+        <p>
+          <b>FESC’s</b> leadership team and organizational structure assure that truly leading edge research and development of critical importance to the Florida and national economies are developed, world-class students in multiple disciplines of energy are trained, and industry reaps the full benefits of the Consortium’s activities. The Leadership Team of <b>FESC</b> is comprised of highly-experienced, highly-successful innovators from amongst the related energy research fields, as well as education, outreach, industrial collaboration, technology commercialization, and economic development. The <b>FESC</b> Director, <a href="https://research.ufl.edu/vp.html" target="_blank">Dr. David Norton</a>, is accountable for all mission activities of the Consortium. The Director is assisted in his efforts by a Steering Committee and Associate Directors in Industrial Collaboration and Commercialization, Education and Outreach, and Program Development.
+        </p>
+        <p>
+          The overall goal of the consortium is to become a world leader in energy research, education, technology, and energy systems analysis.
+        </p>
+        <p>
+          Specific goals include:
+        </p>
+        <ul>
+          <li>Coordinate and initiate collaborative interdisciplinary energy research among the universities and the energy industry.</li>
+          <li>Share research results with a wide audience, including the science community, media, business, governments, and industry.</li>
+          <li>Assist in the creation and development of a Florida-based energy technology industry.</li>
+          <li>Provide a state resource for objective energy systems analysis.</li>
+          <li>Develop education and outreach programs to prepare a qualified energy workforce and informed public.</li>
+        </ul>
+        <p style="text-align:center;"><span><i>Please use the links below to view additional information about our researchers, faculty, and governance board members.</i></span></p>
+
+
+        <div class="up-btn-wrapper">
+          <a href="#" onclick="scrollToTop();"><i class="up-btn fas fa-angle-up"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="app-aux-footer">
+    <footer>
+      <div class="bottom-nav">
+        <h3>
+          <div class="botton-nav-title-wrapper">
+            <app-aux-bottom-nav-title title="program overview"></app-aux-bottom-nav-title>
+          </div>
+          <div v-on:click="linkSort('About',1,'Program Overview')" class="bottom-nav-header-wrapper slide-trigger-link">
+            <div class="bottom-nav-header">LINKS</div>
+          </div>
+          <div v-on:click="linkSort('About',1,'Program Overview')" class="bottom-nav-toggle-btn-wrapper slide-trigger "><i class="material-icons up-btn fas fa-angle-up"></i></div>
+        </h3>
+        <div class="menu-area">
+          <div class="menu-area-link-wrapper">
+            <div class="menu-area-row">
+              <div class="menu-area-col">
+                <h4>
+                  General
+                </h4>
+                <div class="sub-link-wrapper">
+                  <a v-for="link in abtLinks1" v-bind:href="url(link)">{{ link.name }}</a>
+                </div>
+              </div>
+              <div class="menu-area-col">
+                <h4>
+                  Organization
+                </h4>
+                <div class="sub-link-wrapper">
+                  <a v-for="link in abtLinks2" v-bind:href="url(link)">{{link.name}}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.8/popper.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+
+  <script src="js/vue-components.js"></script>
+  <script src="js/aux-vue.js"></script>
+  <script src="js/index-scroller.js"></script>
+  <script src="js/index3.js"></script>
+  <script src="js/bottom-nav.js"></script>
+
+
+  <script>
+  (function() {
+    var cx = '010863894560031035182:o932ippm-em';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+</body>
+
+</html>
