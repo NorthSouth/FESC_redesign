@@ -4,7 +4,7 @@ Class project case study: review and undertake partial redesign of public websit
 [Design Plan document](https://github.com/NorthSouth/FESC_redesign/blob/master/docs/DesignPlan.pdf "Design Plan Document") 
 
 ## WEEK 10
-  Refactored static Google Chart API calls to be AJAX requests from the US Energy Information Administration web API (the original source of the data).
+  Refactored Google Chart API calls from static data set to be AJAX requests from the US Energy Information Administration [web API](https://www.eia.gov/opendata/ "web API") (the original source of the data).
   
   Direct [link](https://northsouth.github.io/FESC_redesign/outreach-factSheets-chart01.html "link") to updated page.
 
