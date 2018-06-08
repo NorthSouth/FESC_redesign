@@ -86,8 +86,6 @@
     }
 
     function drawChart3() {
-      console.log(usefulData1.length);
-      console.log(usefulData2.length);
       
         for (i=1; i < usefulData1.length; i++){
           usefulData3.push([usefulData1[i][0],usefulData1[i][1],usefulData2[i][1]]);
@@ -146,9 +144,7 @@
         
         usefulData1=JSON.parse(request.response).series[0].data.reverse();
         usefulData1.push(["2016",null]); //this data set has 1 fewer elements
-        console.log("data set 1: ",usefulData1.length);
         
-        console.log("response from server is: ", JSON.parse(request.response))
         
         drawChart1(usefulData1,'chart_div_1'); // call to Google Charts API
         drawChart3();
@@ -173,9 +169,7 @@
       request.onload = function() {
         
         usefulData2=JSON.parse(request.response).series[0].data.reverse();
-        console.log("data set 2: ",usefulData2.length);
         
-        console.log("response from server is: ", JSON.parse(request.response))
         
         //this data set has one more value than the other
         
