@@ -1,173 +1,189 @@
-<!DOCTYPE html>
-<html lang="en">
+    google.charts.load('current', {
+      'packages': ['corechart']
+    });
 
-<head>
-  <meta charset="UTF-8">
-  <title class="pageTitle" id="data">Energy Data</title>
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    var ufOrange='#b84300';   
+    var ufBlue='#00529b';  
 
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">-->
-
-  <!-- development version, includes helpful console warnings -->
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-  <link rel="stylesheet" href="css/support-page-style.css">
-  <link rel="stylesheet" href="css/chart-style.css">
-
-  <!-- google charts-->
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script src="js/chart-01.js"></script>
-
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-</head>
-
-<body onresize="toggleToTopButton();">
-  <div class="main-content-wrapper" id="main-content-wrapper">
-    <div id="app-aux">
-
-      <app-index-search-bar></app-index-search-bar>
-
-      <div class="nav-container">
-        <app-index-fesc-image></app-index-fesc-image>
-        <div class="navbar">
-        <div id="educationDD" class="dropdown dropbtn">
-          education
-          <div class="sliding-background">&nbsp;</div>
-          <div class="dropdown-content">
-            <div class="row">
-              <div class="column-4">
-                <div class="dropdown-img-container">
-                  <img v-for="nav in edNav" v-bind:src="srcI(nav)" v-bind:alt="altI(nav)">
-                </div>
-              </div>
-              <div class="column-4">
-                <h3>Educational Resources (1)</h3>
-                <a v-for="link in edLinks1" v-bind:href="url(link)">{{ link.name }}</a>
-              </div>
-              <div class="column-4">
-                <h3>Educational Resources (2)</h3>
-                  <a v-for="link in edLinks2" v-bind:href="url(link)">{{link.name}}</a>
-              </div>
-              <div class="column-4">
-                <h3>Jobs and Training</h3>
-                  <a v-for="link in edLinks3" v-bind:href="url(link)">{{ link.name }}</a>
-              </div>
-            </div>
-          </div>
-        </div>  
-          <app-aux-navbar-active-outreach></app-aux-navbar-active-outreach>       
-        <div id="aboutDD" class="dropdown dropbtn">
-          about
-          <div class="sliding-background">&nbsp;</div>
-          <div class="dropdown-content">
-            <div class="row">
-              <div class="column">
-                <div class="dropdown-img-container">
-                  <img v-for="nav in abtNav" v-bind:src="srcI(nav)" v-bind:alt="altI(nav)">
-                </div>
-              </div>
-              <div class="column">
-                <h3>General</h3>
-                  <a v-for="link in abtLinks1" v-bind:href="url(link)">{{ link.name }}</a>
-              </div>
-              <div class="column">
-                <h3>Organization</h3>
-                  <a v-for="link in abtLinks2" v-bind:href="url(link)">{{ link.name }}</a>
-              </div>
-            </div>
-          </div>
-        </div>   
-          <app-index-navbar-dropdown-contact></app-index-navbar-dropdown-contact>
-        </div>
-
-        <app-index-uf-logo></app-index-uf-logo>
-
-      </div>
-
+    google.charts.setOnLoadCallback(getData1); // need to get data first!
+    google.charts.setOnLoadCallback(getData2); // need to get data first!
     
-      <div class="hero-nav" id="hero-nav">
-        <div class="hero-nav-inner">
-          <h1>Energy Data</h1>
-        </div>
-      </div>
-      <div class="page-content" id="page-content">
-
-        <div class="chart-container">
-          <div class="chart-row">
-            <div class="chart-2" id="line_chart_1" style="width: 900px; height: 500px"></div>
-            <div class="chart-2" id="line_chart_2" style="width: 900px; height: 500px"></div>
-          </div>
-          <div class="chart-row">
-            <div id="line_chart_3" style="width: 900px; height: 500px"></div>
-          </div>
-        </div>
-
-        <p style="text-align:center;"><span><i>Please use the links below to view Energy Awareness Fact Sheets, Energy Video Clips, and other important resources for Florida homeowners.</i></span></p>
+    let testData="";
+    usefulData1=[];
+    usefulData2=[];
+    usefulData3=[];
 
 
-        <div class="up-btn-wrapper">
-          <a href="#" onclick="scrollToTop();"><i class="up-btn fas fa-angle-up"></i></a>
-        </div>
-      </div>
 
-    </div>
-
-
-  </div>
+    function drawChart1() {
  
-<div id="app-aux-footer">
-  <footer>
-    <div class="bottom-nav">
-      <h3>
-        <div class="botton-nav-title-wrapper">
-           <app-aux-bottom-nav-title title="charts"></app-aux-bottom-nav-title>
-        </div>
-        <div v-on:click="linkSort('Outreach',1,'Fact Sheets')" class="bottom-nav-header-wrapper slide-trigger-link">
-            <div class="bottom-nav-header">LINKS</div>
-          </div>
-        <div v-on:click="linkSort('Outreach',1,'Fact Sheets')" class="bottom-nav-toggle-btn-wrapper slide-trigger "><i class="material-icons up-btn fas fa-angle-up"></i></div>
-      </h3>
-      <div class="menu-area">
-        <div class="menu-area-link-wrapper">
-          <div class="menu-area-row">
-            <div class="menu-area-col">
-              <h4>
-                Information
-              </h4>
-               <div class="sub-link-wrapper">
-                  <a v-for="link in orLinks1" v-bind:href="url(link)">{{ link.name }}</a>
-                </div>
-            </div>
-            <div class="menu-area-col">
-              <h4>
-                Links
-              </h4>
-                <div class="sub-link-wrapper">
-                  <a v-for="link in orLinks2" v-bind:href="url(link)">{{ link.name }}</a>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  </div>
+      usefulData1.unshift(["Year", "Billion BTUs"]);
+      
+      var data = google.visualization.arrayToDataTable(usefulData1);
+      
+      var options = {
+        title: 'Renewable Energy Production (Florida)',
+        curveType: 'function',
+        titleTextStyle: { 
+          fontSize: 17,
+          fontName: 'Colaborate-Regular'
+        },
+        series: {
+          0: {
+            color: '#00529b'
+          }
+        },
+        chartArea: {
+          backgroundColor: 
+          {
+            fill: '#fffdf5'
+          }
+        },
+        legend: {
+          position: 'bottom'
+        },
+        forceIFrame: 'false'
+      };
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.8/popper.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+      var chart1 = new google.visualization.LineChart(document.getElementById('line_chart_1'));
 
+      chart1.draw(data, options);
+    }
 
-  <script src="js/vue-components.js"></script>
-  <script src="js/aux-vue.js"></script>
-  <script src="js/index-scroller.js"></script>
-  <script src="js/index3.js"></script>
-  <script src="js/bottom-nav.js"></script>
+    function drawChart2() {
+      usefulData2.unshift(["Year", "Billion BTUs"]);
+      
+      var data = google.visualization.arrayToDataTable(usefulData2);
+      
+      var options = {
+        title: 'Electricity, total consumption (Florida)',
+        curveType: 'function',
+        titleTextStyle: { 
+          fontSize: 17,
+          fontName: 'Colaborate-Regular'
+        },
+        series: {
+          0: {
+            color: '#00529b'
+          }
+        },
+        legend: {
+          position: 'bottom'
+        },
+        chartArea: {
+          backgroundColor: 
+          {
+            fill: '#fffdf5'
+          }
+        },
+        forceIFrame: 'false'        
+      };
 
+      var chart = new google.visualization.LineChart(document.getElementById('line_chart_2'));
 
+      chart.draw(data, options);
+    }
 
+    function drawChart3() {
+      
+      for (i=1; i < usefulData1.length; i++){
+          usefulData3.push([usefulData1[i][0],usefulData1[i][1],usefulData2[i][1]]);
+      }
+      
+      usefulData3.unshift(['Year', 'Total Consumption','Renewable Production']);
+     
+      var data = google.visualization.arrayToDataTable(usefulData3);
+      
+      var options = {
+        title: 'Electrical Consumption vs Production (Florida)',
+        curveType: 'function',
+        titleTextStyle: { 
+          fontSize: 17,
+          fontName: 'Colaborate-Regular'
+        },
+        series: {
+          0: {
+            color: '#00529b'
+          },
+          1: {
+            color: '#b84300'
+          }
+        },
+        chartArea: {
+          backgroundColor: 
+          {
+            fill: '#fffdf5'
+          }
+        },
+        legend: {
+          position: 'bottom'
+        },
+        vAxes: [
+          {
+            title:'BTU (billions)'
+          }
+        ],
+        forceIFrame: 'false'
+      };
 
-</body>
+      var chart = new google.visualization.LineChart(document.getElementById('line_chart_3'));
 
-</html>
+      chart.draw(data, options);
+    }
+
+ 
+    function getData1() {
+      // Create a new request object
+      let request = new XMLHttpRequest()
+          
+      let requestUrl = "https://api.eia.gov/series/?api_key=633efc9726e63241c5c5036ce19692eb&series_id=SEDS.REPRB.FL.A"
+      // Open a connection
+      request.open('GET', requestUrl, true)
+      // Callback for when the request completes;
+      request.onload = function() {
+        
+        usefulData1=JSON.parse(request.response).series[0].data.reverse();
+        usefulData1.push(["2016",null]); //this data set has 1 fewer elements
+        
+        
+        drawChart1(usefulData1,'chart_div_1'); // call to Google Charts API
+        
+      }
+      // Callback for when there's an error
+      request.error = function(err) {
+        console.log("error is: ", err)
+      }
+      // Send the request to the specified URL
+      request.send()
+    }
+   
+    
+    function getData2() {
+      // Create a new request object
+      let request = new XMLHttpRequest()
+      // TODO: URL to contact goes here
+      let requestUrl = "https://api.eia.gov/series/?api_key=633efc9726e63241c5c5036ce19692eb&series_id=SEDS.TETCB.FL.A"
+      // Open a connection
+      request.open('GET', requestUrl, true)
+      // Callback for when the request completes;
+      request.onload = function() {
+        
+        usefulData2=JSON.parse(request.response).series[0].data.reverse();
+        
+        
+        //this data set has one more value than the other
+        
+        drawChart2(usefulData2,'chart_div_2'); // call to Google Charts API
+        
+        setTimeout(drawChart3,250);
+        
+      }
+      // Callback for when there's an error
+      request.error = function(err) {
+        console.log("error is: ", err)
+      }
+      // Send the request to the specified URL
+      request.send()
+    }
+   
