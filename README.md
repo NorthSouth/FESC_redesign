@@ -6,7 +6,7 @@ Class project case study: review and undertake partial redesign of public websit
 ## WEEK 10
   Refactored static Google Chart API calls to be AJAX requests from the US Energy Information Administration web API (the original source of the data).
   
-  Direct [link](https://northsouth.github.io/FESC_redesign/outreach-factSheets-chart01.html "link") to update page.
+  Direct [link](https://northsouth.github.io/FESC_redesign/outreach-factSheets-chart01.html "link") to updated page.
 
 ## WEEK 8
   1. Re-built pages to make use of the Vue framework
