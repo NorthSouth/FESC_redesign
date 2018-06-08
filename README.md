@@ -1,5 +1,7 @@
 # HTML300-FESC_redesign
-Class project case study: review and undertake partial redesign of public website (FESC: http://floridaenergy.ufl.edu/) utilizing design best practices
+Class project case study: review and undertake partial redesign of public website (FESC: http://floridaenergy.ufl.edu/) utilizing design best practices.
+
+[Design Plan document](https://github.com/NorthSouth/FESC_redesign/blob/master/docs/DesignPlan.pdf "Design Plan Document") 
 
 ## WEEK 10
   1. Refactored static Google Chart API calls to be AJAX requests from the US Energy Information Administration web API (the original source of the data).
