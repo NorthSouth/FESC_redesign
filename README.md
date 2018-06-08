@@ -1,5 +1,5 @@
 # FESC redesign project
-Class project case study: review and undertake partial redesign of public website (FESC: http://floridaenergy.ufl.edu/) utilizing design best practices.
+Class project case study: review and undertake partial redesign of a public website (FESC: http://floridaenergy.ufl.edu/) utilizing design best practices.
 
 [Design Plan document](https://github.com/NorthSouth/FESC_redesign/blob/master/docs/DesignPlan.pdf "Design Plan Document") 
 
