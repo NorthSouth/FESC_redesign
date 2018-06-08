@@ -21,7 +21,7 @@ Class project case study: review and undertake partial redesign of a public webs
      A line chart was selected since it intuitively conveys the data as a function of time. I also added a third chart with the two data sets plotted simultaneously in order to more clearly delineate the contribution of renewable energy.
      
      [link](https://developers.google.com/chart/interactive/docs/gallery/linechart "link") to Google Charts page 
-  2. The chart was added to outreach>fact sheets
+  2. The chart was added to [outreach > fact sheets](https://northsouth.github.io/FESC_redesign/outreach-factSheets-chart01.html "outreach > fact sheets")
   3. Completed work on building out the page templates for all 4 top-level nav categories (education, outreach, about and contact).
   4. Updated/propogated changes to the main nav to all active parts of the site; UF logo image link parallels style of UF site in header design.
   
