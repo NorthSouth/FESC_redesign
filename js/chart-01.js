@@ -87,9 +87,10 @@
 
     function drawChart3() {
       
-        for (i=1; i < usefulData1.length; i++){
+      for (i=1; i < usefulData1.length; i++){
           usefulData3.push([usefulData1[i][0],usefulData1[i][1],usefulData2[i][1]]);
-        }
+      }
+      
       usefulData3.unshift(['Year', 'Total Consumption','Renewable Production']);
      
       var data = google.visualization.arrayToDataTable(usefulData3);
@@ -147,7 +148,7 @@
         
         
         drawChart1(usefulData1,'chart_div_1'); // call to Google Charts API
-        drawChart3();
+        
       }
       // Callback for when there's an error
       request.error = function(err) {
@@ -174,6 +175,8 @@
         //this data set has one more value than the other
         
         drawChart2(usefulData2,'chart_div_2'); // call to Google Charts API
+        
+        drawChart3();
         
       }
       // Callback for when there's an error
