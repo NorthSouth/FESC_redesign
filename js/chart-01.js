@@ -166,7 +166,7 @@
       // Create a new request object
       let request = new XMLHttpRequest()
       // TODO: URL to contact goes here
-      let requestUrl = "http://api.eia.gov/series/?api_key=633efc9726e63241c5c5036ce19692eb&series_id=SEDS.TETCB.FL.A"
+      let requestUrl = "https://api.eia.gov/series/?api_key=633efc9726e63241c5c5036ce19692eb&series_id=SEDS.TETCB.FL.A"
       // Open a connection
       request.open('GET', requestUrl, true)
       // Callback for when the request completes;
