@@ -183,8 +183,10 @@ body {
   height: 100px; }
 
 .fesc-image-container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 22rem;
-  padding: 1rem 0 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
   text-align: left; }
 
 .uf-image-container {
@@ -237,9 +239,10 @@ body {
   width: 110rem;
   padding-top: 2.75rem;
   overflow: hidden;
-  background-color: white;
+  background-color: red;
   font-family: linkFont, Arial, sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  height: 8rem; }
 
 .navbar a {
   font-size: 1.25rem;
@@ -746,4 +749,4 @@ footer {
   .text {
     font-size: .9rem; } }
 
-/*# sourceMappingURL=main-page-style.css.map */
+/*# sourceMappingURL=main-page-style-test.css.map */

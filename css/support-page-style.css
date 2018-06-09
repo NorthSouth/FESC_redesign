@@ -427,7 +427,8 @@ footer {
   letter-spacing: .8px;
   display: block;
   text-align: left;
-  cursor: pointer; }
+  cursor: pointer;
+  border-bottom: solid #ff711f 2px; }
 
 .sub-link-wrapper a:hover {
   border-bottom: solid white 2px; }
@@ -605,6 +606,7 @@ footer {
   text-decoration: none;
   display: block;
   text-align: left;
+  border-bottom: solid #fffdf5 1px;
   -webkit-animation-name: dropdown-anim;
           animation-name: dropdown-anim; }
 
@@ -729,6 +731,7 @@ body {
   text-decoration: none;
   display: block;
   text-align: left;
+  border-bottom: solid #fffdf5 1px;
   -webkit-animation-name: dropdown-anim;
           animation-name: dropdown-anim; }
 
