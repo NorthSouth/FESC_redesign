@@ -1,5 +1,7 @@
 $bottom-nav-z-index:100;
 
+
+
 // FOOTER
 footer {
   position: fixed;
@@ -218,6 +220,7 @@ footer {
   display: block;
   text-align: left;
   cursor: pointer;  
+  border-bottom: solid  $uf-orange-lighter 2px;
 }
 
 .sub-link-wrapper a:hover {
