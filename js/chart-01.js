@@ -144,7 +144,8 @@
       request.onload = function() {
         
         usefulData1=JSON.parse(request.response).series[0].data.reverse();
-        usefulData1.push(["2016",null]); //this data set has 1 fewer elements
+    /*    usefulData1.push(["2016",null]);*/ 
+        //this data set HAD 1 fewer elements ... apparently it was corrected
         
         
         drawChart1(usefulData1,'chart_div_1'); // call to Google Charts API
